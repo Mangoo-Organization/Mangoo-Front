@@ -2,11 +2,41 @@
   "name": "mangoo-front",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "verbose": true
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/material": "^5.15.7",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.14",
+    "@mui/x-data-grid": "^6.19.2",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
+    "chart.js": "^4.4.2",
+    "cpf": "^2.0.1",
+    "firebase": "^10.9.0",
+    "moment": "^2.30.1",
+    "react-burger-menu": "^3.0.9",
+    "react-chartjs-2": "^5.2.0",
+    "react-countdown": "^2.3.5",
+    "react-data-table-component": "^7.5.3",
+    "react-icons": "^5.0.1",
+    "react-input-mask": "^2.0.4",
+    "react-modal": "^3.16.1",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^6.1.8",
+    "web-vitals": "^2.1.4"
+
   },
   "dependencies": {
     "react": "^18",
@@ -19,6 +49,12 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "@testing-library/jest-dom": "^6.4.6",
+    "babel-jest": "^29.7.0",
+    "jest-dom": "^4.0.0",
+    "ts-jest": "^29.2.2"
   }
 }
