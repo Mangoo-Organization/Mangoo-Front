@@ -2,6 +2,7 @@
   "name": "mangoo-front",
   "version": "0.1.0",
   "private": true,
+  
   "jest": {
     "verbose": true
   },
@@ -11,6 +12,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
@@ -38,7 +40,6 @@
     "react-icons": "^5.0.1",
     "react-input-mask": "^2.0.4",
     "react-modal": "^3.16.1",
-    "react-scripts": "^5.0.1",
     "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
