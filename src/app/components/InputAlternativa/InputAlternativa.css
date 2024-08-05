@@ -1,0 +1,31 @@
+.container__input{
+    width: 411px;
+    height: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-width: 1.25px;
+    border-radius: 8px;
+    border-color:var(--bittersweet);
+   
+}
+
+.input__alternativas{
+    width: 400px;
+    height: 30px;
+    border: 0 none;
+    outline: 0;
+
+}
+
+/* .input__X{
+ 
+} */
+
+.input__radio{
+    margin-right: 10px;
+    color: var(--bittersweet);
+}
