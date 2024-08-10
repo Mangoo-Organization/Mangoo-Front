@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "./components/Button/Button";
 import InputAlternativa from "./components/InputAlternativa/InputAlternativa"
+import InputDescricao from "./components/InputDescricao/InputDescricao";
 
 
 export default function Home() {
@@ -14,6 +15,10 @@ export default function Home() {
       <br/>
       <br/>
       <InputAlternativa placeHolder={'teste'}/>
+      <br/>
+      <br/>
+      <br/>
+      <InputDescricao placeHolder={'Input de descrição'}/>
     </main>
   );
 }
