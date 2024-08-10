@@ -13,9 +13,8 @@ const InputAlternativa = ({placeHolder}: InputProps) => {
         src="/icones/streamline_delete-1.png" 
         alt='X-delete' 
         width={14}
-        height={14}
-        className='input__X'/>
-         
+        height={14}/>
+        
     </div>
   )
 }

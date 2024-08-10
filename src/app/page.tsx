@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "./components/Button/Button";
-import InputAlternativa from "./components/InputAlternativa/InputAlternativa"
-import InputDescricao from "./components/InputDescricao/InputDescricao";
+import SearchBar from "./components/SearchBar/SearchBar";
+import { InputAlternativa } from "./components";
 
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <br/>
       <br/>
       <br/>
-      <InputDescricao placeHolder={'Input de descrição'}/>
+      <SearchBar placeHolder="Digite o nome da pesquisa"/>
     </main>
   );
 }
