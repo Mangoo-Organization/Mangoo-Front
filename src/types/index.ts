@@ -5,3 +5,7 @@ export interface ButtonProps{
 export interface InputProps{
     placeHolder: string
 }
+
+export interface SelectProps{
+    title:string
+}

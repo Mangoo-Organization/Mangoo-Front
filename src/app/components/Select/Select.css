@@ -1,0 +1,35 @@
+.select__container{
+
+    display: flex;
+    
+}
+
+.select__box{
+    width: 350px;
+    height: 38px;
+    border-width: 0.8px;
+    border-color: var(--jungle-green);
+    border-radius: 8px;
+    color: var(--brunswick-green);
+    font-family: var(--nunito);
+    padding: 8px;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.select__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1.5em;
+}
+
+
+.select__option {
+    font-family: var(--nunito);
+    color: var(--brunswick-green);
+    font-size: 14px;
+    cursor: pointer;
+}
+
