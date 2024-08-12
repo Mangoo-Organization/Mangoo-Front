@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <footer className='footer__container'>
-        <div className='footer__div1'>
+        <div className='footer__legal'>
             <div className='footer__logo'>
                 <Image
                     src='/icones/logo_vetorizada.svg'

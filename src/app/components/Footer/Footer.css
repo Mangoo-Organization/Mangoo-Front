@@ -9,27 +9,27 @@
   }
 
 /* Flex container with responsive layout */
-.footer__div1 {
-    display: flex;               /* flex */
-    flex-wrap: wrap;             /* flex-wrap */
-    justify-content: space-between; /* justify-between */
-    gap: 1.25rem;                /* gap-5 (5 * 0.25rem = 1.25rem) */
-    padding-left: 1.5rem;        /* px-6 (6 * 0.25rem = 1.5rem) */
-    padding-right: 1.5rem;       /* px-6 (6 * 0.25rem = 1.5rem) */
-    padding-top: 2.5rem;         /* py-10 (10 * 0.25rem = 2.5rem) */
-    padding-bottom: 2.5rem;      /* py-10 (10 * 0.25rem = 2.5rem) */
+.footer__legal {
+    display: flex;              
+    flex-wrap: wrap;            
+    justify-content: space-between; 
+    gap: 1.25rem;                
+    padding-left: 1.5rem;        
+    padding-right: 1.5rem;       
+    padding-top: 2.5rem;         
+    padding-bottom: 2.5rem;      
   }
   
-  @media (max-width: 768px) {    /* max-md: (Tailwind breakpoint for md is 768px) */
+  @media (max-width: 768px) {    
     .footer__div1 {
-      flex-direction: column;    /* flex-col */
+      flex-direction: column;   
     }
   }
   
-  @media (min-width: 640px) {    /* sm:px-16 applies at the 'sm' breakpoint, which starts at 640px */
+  @media (min-width: 640px) {   
     .footer__div1 {
-      padding-left: 4rem;        /* px-16 (16 * 0.25rem = 4rem) */
-      padding-right: 4rem;       /* px-16 (16 * 0.25rem = 4rem) */
+      padding-left: 4rem;        
+      padding-right: 4rem;       
     }
   }
 
