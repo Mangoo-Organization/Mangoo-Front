@@ -1,10 +1,13 @@
-import { ButtonProps } from '@/types'
+import { ButtonProps } from '../../../types/index'
 import React from 'react'
 import './Button.css'
 
-const Button = ({title}: ButtonProps) => {
+const Button = ({title, type}: ButtonProps) => {
+  
   return (
-    <button className='botao__padrao'>{title}</button>
+    <>
+    <button className={type}>{title}</button>
+    </>
   )
 }
 
