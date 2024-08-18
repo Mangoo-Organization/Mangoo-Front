@@ -11,6 +11,7 @@ const Button = style.button<{extra?: boolean}>`
   transition: 0.4s;
   font-size: ${props => props.extra ? '18px' : '16px'};
   width: ${props => props.extra ? '140px' : '130px'};
+  cursor: pointer;
 `;
 
 export const Green = style(Button)`
@@ -20,7 +21,6 @@ export const Green = style(Button)`
     color: var(--caribbean-current);
     background-color: transparent;
     border: 1px solid var(--caribbean-current);
-    cursor: pointer;
   }
 `;
 
@@ -31,7 +31,6 @@ export const DarkGreen = style(Button)`
     color: var(--caribbean-current);
     background-color: hsla(166, 66%, 42%, 0.3);
     border: 1px solid var(--caribbean-current);
-    cursor: pointer;
   }
 `;
 

@@ -1,10 +1,11 @@
 'use client'
 import * as Button from "./components/Button/Button";
+import NavBar from "./components/NavBar/NavBar";
 
 export default function Home() {
   return (
     <main className="something">
-
+      <NavBar></NavBar>
       <div className='ExtraButtons'>
         <p className='title'>Extra Buttons</p>
         <Button.Green extra>Button</Button.Green>
