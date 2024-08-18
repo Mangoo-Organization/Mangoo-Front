@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 import React from 'react'
 
-const SearchBar = ({placeHolder}: InputProps) => {
+const SearchBar = ({placeholder}: InputProps) => {
   return (
     //onSubimit = ?
     <form className='searchbar'> 
-        <input type="text" placeholder={placeHolder} className='searchbar__input'/>
+        <input type="text" placeholder={placeholder} className='searchbar__input'/>
         <div className='searchbar__magnifying-container'>
           <Image
               src='/icones/magnifying-glass.svg'

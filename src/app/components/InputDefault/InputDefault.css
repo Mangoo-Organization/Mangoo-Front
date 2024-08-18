@@ -1,0 +1,24 @@
+.inputdefault__container{
+    display: grid;
+    justify-items: start;
+    width: 21.375rem;
+    background-color: var(--baby-powder);
+    border-radius: 8px;
+    box-shadow: 0 1.5px var(--jungle-green);
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.inputdefault__container span{
+    font-family: var(--nunito);
+    color:var(--jungle-green);
+    
+}
+.inputdefault__container input{
+    border-radius: 8px;
+    border: 0 none;
+    outline: none;
+}
+.inputdefault__container input::placeholder{
+
+    font-family: var(--nunito);
+}

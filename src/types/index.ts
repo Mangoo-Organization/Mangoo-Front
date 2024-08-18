@@ -3,9 +3,7 @@ export interface ButtonProps{
 }
 
 export interface InputProps{
-    placeHolder: string
+    placeholder: string,
+    title?: string
 }
 
-export interface SelectProps{
-    title:string
-}

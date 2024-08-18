@@ -3,7 +3,8 @@ import styles from "./page.module.css";
 import Button from "./components/Button/Button";
 import SearchBar from "./components/SearchBar/SearchBar";
 import { InputAlternativa } from "./components";
-import Select from "./components/Select/Select";
+import InputDefault from "./components/InputDefault/InputDefault";
+
 
 
 export default function Home() {
@@ -15,15 +16,15 @@ export default function Home() {
       <br/>
       <br/>
       <br/>
-      <InputAlternativa placeHolder={'teste'}/>
+      <InputAlternativa placeholder={'teste'}/>
       <br/>
       <br/>
       <br/>
-      <SearchBar placeHolder="Digite o nome da pesquisa"/>
+      <SearchBar placeholder="Digite o nome da pesquisa"/>
       <br/>
       <br/>
       <br/>
-      <Select title="Marina é OTARIA"/>
+      <InputDefault title="Isso é um titulo" placeholder="Isso é um placeholder"/>
     </main>
   );
 }
