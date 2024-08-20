@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Button from "./components/Button/Button";
+import Footer from "./components/Footer/Footer";
 
 
 export default function Home() {
@@ -10,9 +11,9 @@ export default function Home() {
       <h2 className="corpo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
       <Button title="BOTÃO 1"/>
       <br />
-      <button className="button-85">BOTÃO 2</button>
       <br />
-      <button className="button-92">BOTÃO 3</button>
+      <br />
+      <Footer/>
     </main>
   );
 }
