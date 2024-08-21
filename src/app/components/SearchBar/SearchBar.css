@@ -1,0 +1,26 @@
+.searchbar{
+    display: flex;
+}
+
+.searchbar__input{
+    padding-left: 1em;
+    width: 342px;
+    border: 0 none;
+    outline: 0;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--nunito);
+    
+
+}
+
+ .searchbar__magnifying-container{
+    background-color: var(--zomp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 8px 8px 0px;
+    width: 60px;
+    height: 40px;
+ }
