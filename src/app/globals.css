@@ -14,16 +14,16 @@
   --baby-powder: #FFFFFA;
   --silver: #BCBEBA;
 
-  / Light mode colors/
+  /* Light mode colors*/
   --jet: #333138;
   --french-gray: #B9B7BE;
   --anti-flash-white: #F1F1F1;
 
-  / Dark mode colors/
+  /*Dark mode colors*/
   --gunmetal: #242A35;
   --raisin-black: #1C222C;
 
-  / Mangoo fonts /
+  /*Mangoo fonts*/
   --poppins: "Poppins", sans-serif;
   --nunito: "Nunito", sans-serif;
 }
@@ -40,8 +40,8 @@
 
 .something{
   text-align: center;
-  / display: flex;
-  justify-content: space-evenly; /
+  /* display: flex;
+  justify-content: space-evenly; */
 }
 
 /* This settings bellow are to reduce browser inconsistences. Do not change! */
