@@ -1,0 +1,48 @@
+.counter__conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.counter__button{
+    font-size: 25px;
+    font-family: var(nunito);
+    font-weight: 400;
+    margin: 1em 0.1em 0.1em;
+    height: 40px;
+    padding: 0 0.6em;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--jungle-green);
+    color: var(--baby-powder);
+    cursor: pointer;
+}
+
+.counter__input{
+    margin: 0.2em 0.5em;
+    font-size: 16px;
+    font-family: var(nunito);
+    font-weight: 400;
+    background-color: var(--baby-powder);
+    width: 70px;
+    height: 30px;
+    padding: 1em;
+    border-radius: 8px;
+    border: 1px solid  hsla(0, 0%, 0%, 40%);;
+}
+
+.input__conteiner{
+    background-color: var(--baby-powder);
+    border:none;
+    width: 70px;
+    height: 30px;
+    color:  hsla(0, 0%, 0%, 40%);
+}
+
+.text{
+    font-size: 18px;
+    font-family: var(--nunito);
+    font-weight: 400;
+    color:var(--jungle-green);
+}
