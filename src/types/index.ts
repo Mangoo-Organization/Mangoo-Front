@@ -13,3 +13,7 @@ export interface DropdownProps{
     onOptionClick: (option:string) => void,
     placeholder:string
 }
+
+export interface CheckboxProps{
+    content:string
+}

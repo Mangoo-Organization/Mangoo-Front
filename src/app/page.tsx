@@ -9,9 +9,7 @@ import Checkbox from "./components/CheckBox/Checkbox";
 
 export default function Home() {
   return (
-    <>
-    <Checkbox/>
-    </>
+    <></>
   );
 }
 //
