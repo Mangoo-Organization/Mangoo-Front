@@ -1,5 +1,6 @@
 export interface ButtonProps{
     title:string
+    extra?: boolean
 }
 
 export interface InputProps{
