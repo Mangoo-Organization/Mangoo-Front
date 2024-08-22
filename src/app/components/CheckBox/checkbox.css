@@ -1,0 +1,30 @@
+.checkbox__container{
+    display: flex;
+    align-items: center;
+
+}
+
+input{
+    width: 16px;
+    height: 16px;
+    
+    
+}
+
+input:checked{
+    all:unset;
+    
+    background-image: url('../../../../public/icones/checkbox.svg');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    margin: 3.5px;
+    border-width: 1px;
+    
+  }
+p{
+    font-family: var(--nunito);
+    font-size: 16px;
+    
+}
+ 

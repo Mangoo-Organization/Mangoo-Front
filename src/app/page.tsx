@@ -3,12 +3,15 @@ import * as Button from "./components/Button/Button";
 import NavBar from "./components/NavBar/NavBar";
 import Counter from "./components/Counter/Counter";
 import { InputSimple } from "./components/InputSimple/InputSimple";
+import Checkbox from "./components/CheckBox/Checkbox";
 
 
 
 export default function Home() {
   return (
-    <></>
+    <>
+    <Checkbox/>
+    </>
   );
 }
 //
