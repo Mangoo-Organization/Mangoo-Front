@@ -1,0 +1,54 @@
+.uploadimage{
+    display: flex;
+    justify-content: center;
+}
+
+.uploadimage__container{
+    flex-direction: row;
+    width: 53.125rem;
+    height: 49.563rem; 
+    padding: 25px;
+    border-radius: 30px;
+    background-color: var(--baby-powder);
+}
+.uploadimage__border{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 45.563rem;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 43.5rem;
+    border: 5px dashed ;
+    border-color: var(--caribbean-current);
+    border-radius: 30px;
+}
+.uploadimage__delete-icon{
+    margin-left: 825px;
+    
+}
+
+.uploadimage__text{
+    margin-top: -200px;
+}
+
+.uploadimage__text-p1{
+    font-family: var(--poppins);
+    font-size: 36px;
+    color: var(--caribbean-current);
+    text-align: center;
+
+}
+.uploadimage__text-span{
+    font-family: var(--poppins);
+    font-size: 36px;
+    color: var(--sandy-brown);
+    text-decoration: underline;
+}
+
+.uploadimage__text-p2{
+    
+    font-family: var(--poppins);
+    font-size: 24px;
+    color: var(--silver);
+}
