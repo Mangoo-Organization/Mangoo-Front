@@ -7,9 +7,7 @@ import UploadImage from "./components/UploadImage/UploadImage";
 
 export default function Home() {
   return (
-    <>
-    <UploadImage/>
-    </>
+    <></>
   );
 }
 //
