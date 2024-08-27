@@ -1,5 +1,6 @@
 export interface ButtonProps{
     title:string
+    extra?: boolean
 }
 
 export interface InputProps{
@@ -11,4 +12,8 @@ export interface DropdownProps{
     title:string,
     onOptionClick: (option:string) => void,
     placeholder:string
+}
+
+export interface CheckboxProps{
+    content:string
 }

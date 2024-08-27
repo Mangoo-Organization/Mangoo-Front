@@ -1,0 +1,10 @@
+.profile-photo__card{
+    width: 198.67px;
+    height: 268.72;
+    text-align: center;
+}
+.profile-photo__p{
+    font-family: var(--poppins);
+    font-size: 20px;
+    color: var(--brunswick-green);
+}
