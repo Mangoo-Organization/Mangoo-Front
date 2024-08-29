@@ -1,0 +1,133 @@
+.information__container{
+    
+    justify-content: center;
+    text-align: center;
+}
+
+.information__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 64.35rem;
+    height: 51rem;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+}
+
+.information__imagem-progesso{
+    padding: 15px;
+}
+
+.information__info-p{
+    font-size: 43px;
+    font-family: var(--poppins);
+    color: var(--jungle-green);
+    margin-top: 7.2px;
+    margin-bottom: 7.2px;
+}
+
+.information__border{
+    width: 64.35rem;
+    height: 0.525rem;
+    border-radius: 24px;
+    background-color: var(--jungle-green);
+    
+}
+
+.information__info-p2{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--nunito);
+    color: var(--jungle-green);
+}
+
+.information__dadospessoais{
+    width: 812px;
+    height: 233px;
+    display: flex;
+    flex-direction: column;
+}
+
+.information__info-p3{
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    color: var(--french-gray);
+    font-family: var(--poppins);
+    margin-top: -20px;
+}
+
+
+
+.information__border2{
+    margin-top: -20px;
+    width: 812px;
+    height: 10px;
+    border: 1px solid var(--french-gray) ;
+}
+
+.box2{
+    display: flex;
+    font-size: 18px;
+    font-family: var(--nunito);
+    color: var(--brunswick-green);
+
+}
+.box2 span{
+    color: var(--safity-orange);
+}
+
+.text1{
+    margin-left: 15px;
+    
+}
+.text2{
+    margin-left: 270px;
+    
+}
+.text3{
+    margin-left: 125px;
+    
+}
+.text4{
+    margin-left: 175px;
+}
+
+.box3{
+    display: flex;
+    justify-content: space-around;
+}
+.box4{
+    display: flex;
+    margin-left: 12px;
+}
+.box5{
+    margin-left: 40px;
+}
+
+.information__checkbox1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    color: var(--brunswick-green);
+    
+   
+}
+.information__checkbox2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-top: -25px;
+    color: var(--brunswick-green);
+    
+    
+}
+
+.information__buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}

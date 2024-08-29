@@ -1,7 +1,9 @@
 import style from 'styled-components'
 
 
-export const  InputSimple = style.input<{extra?: boolean}>`
+export const  InputSimple = style.input<{extra?: boolean}>
+
+`
   height: 2.438rem;
   border: 1.2px solid var(--french-gray);
   border-radius: 8px;
@@ -12,6 +14,7 @@ export const  InputSimple = style.input<{extra?: boolean}>`
   width: ${props => props.extra ? '21.875rem' : '10rem'};
   cursor: pointer;
 `;
+
 
  
 
