@@ -9,9 +9,7 @@ import ProfilePhoto from "./components/ProfilePhoto/ProfilePhoto";
 
 export default function Home() {
   return (
-    <>
-    <ProfilePhoto/>
-    </>
+    <></>
   );
 }
 //
