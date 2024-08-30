@@ -31,7 +31,9 @@
 }
 
 .token__image{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title__img-token{
@@ -40,6 +42,7 @@
     color: var(--caribbean-current);
     font-weight: 400;
     margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .add__img{
@@ -62,7 +65,7 @@
     font-size: 20px;
     color: var(--french-gray);
     font-family: var(--poppins);
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 0;
 }
 
@@ -70,7 +73,7 @@
     display: inherit;
     justify-content: space-between;
     width: 95%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .asterisk{
