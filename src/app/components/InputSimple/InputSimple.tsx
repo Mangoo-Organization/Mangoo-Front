@@ -9,7 +9,7 @@ export const  InputSimple = style.input<{extra?: boolean}>
   border-radius: 8px;
   padding: 5px 10px;
   font-family: var(--nunito);
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
   width: ${props => props.extra ? '21.875rem' : '10rem'};
   cursor: pointer;
