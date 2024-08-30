@@ -1,0 +1,84 @@
+.institution__image-progress{
+    text-align: center;
+    padding: 1em;
+}
+
+.institution__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 64.35rem;
+    height: 51rem;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+}
+
+.titulo__card{
+    font-family: var(--poppins);
+    color: var(--jungle-green);
+    font-size: 43px;
+    margin-top: 7.2px;
+    margin-bottom: 7.2px;
+}
+
+.div__line{
+    width: 64.35rem;
+    height: 0.525rem;
+    border-radius: 24px;
+    background-color: var(--jungle-green);
+}
+
+.container__inputs{
+    width: 47.85rem;
+}
+
+.titulo__containers1{
+    width: 40.275rem;
+    border-bottom: 1px solid var(--french-gray);
+    font-size: 20px;
+    color: var(--french-gray);
+    font-family: var(--poppins);
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.titulo__containers2{
+    border-bottom: 1px solid var(--french-gray);
+    font-size: 20px;
+    color: var(--french-gray);
+    font-family: var(--poppins);
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.box__dados-institucionais{
+    display: flex;
+}
+
+.boxes{
+    margin-right: 16px;
+}
+
+.buttons{
+    display: inherit;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 50px;
+}
+
+.institution__text{
+    font-family: var(--nunito);
+    font-size: 18px;
+    color: var(--caribbean-current);
+}
+
+.asterisk{
+    color: var(--safity-orange);
+    font-size: 18px;
+}
+
+.optional{
+    color: var(--french-gray);
+}

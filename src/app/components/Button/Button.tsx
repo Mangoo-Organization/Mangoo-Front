@@ -14,6 +14,16 @@ const Button = style.button<{extra?: boolean}>`
   cursor: pointer;
 `;
 
+export const Transparent = style(Button)`
+  border: 1px solid var(--caribbean-current);
+  background-color: transparent;
+  color: var(--brunswick-green);
+  
+  &:hover{
+    background-color: var(--anti-flash-white);
+  }
+
+`;
 export const Green = style(Button)`
   background-color: var(--jungle-green);
 
