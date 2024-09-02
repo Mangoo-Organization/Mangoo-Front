@@ -1,0 +1,52 @@
+.endcad__container{
+    text-align: center;
+}
+
+.endcad__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 64.35rem;
+    height: 51rem;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;    
+}
+
+.endcad__card-p{
+    font-size: 43px;
+    font-family: var(--poppins);
+    color: var(--jungle-green);
+    margin-top: 7.2px;
+    margin-bottom: 7.2px;
+}
+.endcad__imagem-progresso{
+    padding: 15px;
+
+}
+
+.information__border{
+    width: 64.35rem;
+    height: 0.525rem;
+    border-radius: 24px;
+    background-color: var(--jungle-green);
+    
+}
+
+.endcad__card-p2{
+    font-size: 36px;
+    font-family: var(--poppins);
+    color: var(--caribbean-current);
+    margin: 0;
+    
+  
+}
+.endcad__button{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 50px;
+    margin-right: 50px;
+    
+}
