@@ -12,5 +12,14 @@ import ProfilePhoto from "./components/ProfilePhoto/ProfilePhoto";
 
 export default function Home() {
   return (
+    <div>
+      {/* Atualize para retornar os componentes necessários */}
+      <NavBar />
+      <Counter />
+      <InputSimple />
+      <Checkbox />
+      <ProfilePhoto />
+      {/* Atualize para retornar os componentes necessários */}
+    </div>
   );
 }
