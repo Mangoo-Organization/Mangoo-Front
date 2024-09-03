@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
 import Dropdown from "../components/Dropdown/Dropdown";
+import MangooIcon from '../../../public/icones/mangoo-icon.svg'
 
  const StudentRegister = () => {
   return (
@@ -25,7 +26,7 @@ import Dropdown from "../components/Dropdown/Dropdown";
         <div className="student__card">
             
             <Image
-                src='../public/icones/mangoo-icon.svg'
+                src={MangooIcon}
                 alt='mangoo icon'
                 width={25}
                 height={25}
