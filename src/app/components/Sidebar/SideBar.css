@@ -1,0 +1,49 @@
+.sidebar__container{
+    width: 20.436rem;
+    height: 54.525rem ;
+    background-color: white;
+    border-radius:24px;
+    padding: 20px;
+    
+}
+
+.sidebar__header {
+    padding: 1rem; 
+    align-items: center;
+    
+}
+
+.sidebar__perfil {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sidebar__perfil-text{
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    font-size: 20px;
+    font-weight: 400;
+}
+.sidebar__perfil-span{
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--french-gray);
+}
+
+.sidebar__textsub{
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.sidebar__text{
+    color: var(--brunswick-green);
+    font-size: 20px;
+    font-family: var(--poppins);
+    font-weight: 400;
+
+}
