@@ -1,7 +1,18 @@
-.information__container{
-    
-    justify-content: center;
+.information__imagem-progesso{
     text-align: center;
+}
+
+.card__title{
+    font-family: var(--poppins);
+    font-size: 43px;
+    color: var(--jungle-green);
+}
+
+.information__profilephoto{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
 }
 
 .information__info{
@@ -33,7 +44,6 @@
     height: 0.525rem;
     border-radius: 24px;
     background-color: var(--jungle-green);
-    
 }
 
 .information__info-p2{
@@ -43,20 +53,19 @@
     color: var(--jungle-green);
 }
 
-.information__dadospessoais{
-    width: 812px;
-    height: 233px;
-    display: flex;
-    flex-direction: column;
+.container__inputs{
+        width: 47.85rem;
+        
 }
 
-.information__info-p3{
-    display: flex;
-    justify-content: start;
+.container__titulo{
+    width: 100%;
+    border-bottom: 1px solid var(--french-gray);
     font-size: 20px;
     color: var(--french-gray);
     font-family: var(--poppins);
-    margin-top: -20px;
+    margin-top: 40px;
+    margin-bottom: 0;
 }
 
 
@@ -79,55 +88,31 @@
     color: var(--safity-orange);
 }
 
-.text1{
-    margin-left: 15px;
-    
-}
-.text2{
-    margin-left: 270px;
-    
-}
-.text3{
-    margin-left: 125px;
-    
-}
-.text4{
-    margin-left: 175px;
+.input__data1{
+    display: flex;
 }
 
-.box3{
+.input__data2{
     display: flex;
-    justify-content: space-around;
-}
-.box4{
-    display: flex;
-    margin-left: 12px;
-}
-.box5{
-    margin-left: 40px;
 }
 
-.information__checkbox1{
-    display: flex;
-    flex-direction: column;
-    margin-left: 12px;
-    color: var(--brunswick-green);
-    
-   
+.boxes{
+    margin-right: 15px;
 }
-.information__checkbox2{
-    display: flex;
-    flex-direction: column;
-    margin-left: 12px;
-    margin-top: -25px;
-    color: var(--brunswick-green);
-    
-    
+
+.information__checkbox{
+    margin-top: 40px;
 }
+
 
 .information__buttons{
-    display: flex;
+    display: inherit;
     justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
+    margin-top: 50px;
+    width: 95%;
+}
+
+.asterisk{
+    color: var(--safity-orange);
+    font-size: 18px;
 }
