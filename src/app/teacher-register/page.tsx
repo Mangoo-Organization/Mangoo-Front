@@ -14,19 +14,19 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
     <div>
         <NavBar/>
         
-    <div className='page__student'>
+    <div className='page__teacherregister'>
 
-        <div className='intro__student'>
+        <div className='intro__teacherregister'>
             <p>ESPAÇO PARA O CARROSSEL</p>
         </div>
 
-        <div className='space'>
+        <div className='space__teacherregister'>
             {/*Spacing between divs*/}
         </div>
 
-        <div className="student__card">
+        <div className="teacherregister__card">
             
-            <div className='logo__card'>
+            <div className='logo__card__teacherregister'>
             <Image
                 src={MangooIcon}
                 alt='mangoo icon'
@@ -35,36 +35,36 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             />
             </div>
             
-            <p className='titulo__card'>Crie sua conta</p>
+            <p className='titulo__card__teacherregister'>Crie sua conta</p>
             
-            <div className="div__line"></div>
+            <div className="div__line__teacherregister"></div>
 
-            <div className="container__inputs">
+            <div className="container__inputs__teacherregister">
 
-                <p className='subtitle__text'>Nome completo<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__teacherregister'>Nome completo<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Nome Completo' style={{ width: '380px'}}/>
                 
-                <p className='subtitle__text'>E-mail<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__teacherregister'>E-mail<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Email Ex: professor@instituição.com' style={{ width: '380px'}}/>
 
-                <p className='subtitle__text'>Senha<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__teacherregister'>Senha<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Senha' style={{ width: '380px'}}/>
 
-                <p className='subtitle__text'>Confirmação de senha<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__teacherregister'>Confirmação de senha<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Confirme sua senha' style={{ width: '380px'}}/>
 
-                <p className='subtitle__text'>Código da instituição<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__teacherregister'>Código da instituição<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Código fornecido pela instituição' style={{ width: '380px'}}/>
 
-                <p className='subtitle__text'>Como podemos te chamar?<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__teacherregister'>Como podemos te chamar?<span className='asterisk'>*</span></p>
                 <Dropdown options={["opção 1", "opção 2", "opção 3", "opção 4"]}  placeholder="selecione a opção preferida" title="Como podemos te chamar?" onOptionClick={console.log}/>
 
             </div>
 
-            <div className="buttons">
+            <div className="buttons__teacherregister">
                 <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Criar conta</Button.Focused>    
             </div>
-            <p className='footer__text'>Já possui uma conta? Clique aqui</p>
+            <p className='footer__text__teacherregister'>Já possui uma conta? Clique aqui</p>
         </div>
     </div>
     </div>

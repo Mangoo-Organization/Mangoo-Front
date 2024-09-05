@@ -1,21 +1,21 @@
-.page__student{
+.page__studentregister{
     display: flex;
     flex-direction: line;
     transform: translate(172px, 80px);
     align-items: center;
 }
 
-.intro__student{
+.intro__studentregister{
     background-color: rgb(197, 197, 197);
     width: 731px;
     height: 763px;
 }
 
-.space{
+.space__studentregister{
     padding-left: 152px;
 }
 
-.student__card{
+.student__card__register{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,13 +25,13 @@
     margin-bottom: 40px; /*Better box view*/
 }
 
-.logo__card{
+.logo__card__studentregister{
     margin-top: 13px;
     margin-bottom: -10px;
     background-color: rgb(255, 255, 255);
 }
 
-.titulo__card{
+.titulo__card__studentregister{
     font-family: var(--poppins);
     color: var(--jungle-green);
     font-size: 36px;
@@ -39,19 +39,19 @@
     margin-bottom: 7.2px;
 }
 
-.div__line{
+.div__line__studentregister{
     width: 710px;
     height: 0.525rem;
     border-radius: 24px;
     background-color: var(--jungle-green);
 }
 
-.container__inputs{
+.container__inputs__studentregister{
     background-color: rgb(255, 255, 255);
     width: 400px;
 }
 
-.buttons{
+.buttons__studentregister{
     display: inherit;
     justify-content: center;
     width: 95%;
@@ -61,14 +61,14 @@
     margin-bottom: 7px;
 }
 
-.subtitle__text{
+.subtitle__text__studentregister{
     font-family: var(--nunito);
     font-size: 18px;
     color: var(--caribbean-current);
     margin-bottom: 7px;
 }
 
-.footer__text{
+.footer__text__studentregister{
     font-family: var(--nunito);
     font-size: 14px;
     font-weight: 700;

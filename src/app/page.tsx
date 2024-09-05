@@ -14,9 +14,16 @@ import StudentRegister from "./student-register/page";
 import StudentLogin from "./student-login/page";
 import TeacherRegister from "./teacher-register/page";
 import TeacherLogin from "./teacher-login/page";
+import OwnerLogin from "./owner-login/page";
+import ForgotPassword from "./forgot-password/page";
+import ForgotPasswordConfirm from "./forgot-password-confirm/page";
+import ForgotPasswordChange from "./forgot-password-change/page";
 
 export default function Home() {
   return (
-    <TeacherLogin></TeacherLogin>
+    /*<OwnerLogin></OwnerLogin>*/
+    /*<ForgotPassword></ForgotPassword>*/
+    /*<ForgotPasswordConfirm></ForgotPasswordConfirm>*/
+    <ForgotPasswordChange></ForgotPasswordChange>
   );
 }

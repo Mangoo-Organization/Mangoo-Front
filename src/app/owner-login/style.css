@@ -1,37 +1,37 @@
-.page__teacherregister{
+.page__owner{
     display: flex;
     flex-direction: line;
-    transform: translate(172px, 80px);
+    transform: translate(140px, 120px);
     align-items: center;
 }
 
-.intro__teacherregister{
+.intro__owner{
     background-color: rgb(197, 197, 197);
-    width: 731px;
-    height: 763px;
+    width: 750px;
+    height: 750px;
+    margin-bottom: 70px; /*Better box view*/
 }
 
-.space__teacherregister{
-    padding-left: 152px;
+.space__owner{
+    padding-left: 190px;
 }
 
-.teacherregister__card{
+.owner__card{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 710px;
     background-color: rgb(255, 255, 255);
     border-radius: 24px;
-    margin-bottom: 40px; /*Better box view*/
 }
 
-.logo__card__teacherregister{
+.logo__card__owner{
     margin-top: 13px;
     margin-bottom: -10px;
     background-color: rgb(255, 255, 255);
 }
 
-.titulo__card__teacherregister{
+.titulo__card__owner{
     font-family: var(--poppins);
     color: var(--jungle-green);
     font-size: 36px;
@@ -39,19 +39,30 @@
     margin-bottom: 7.2px;
 }
 
-.div__line__teacherregister{
+.div__line__owner{
     width: 710px;
     height: 0.525rem;
     border-radius: 24px;
     background-color: var(--jungle-green);
 }
 
-.container__inputs__teacherregister{
+.container__inputs__owner{
     background-color: rgb(255, 255, 255);
     width: 400px;
 }
 
-.buttons__teacherregister{
+.password__text__owner{
+    font-family: var(--nunito);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--jungle-green);
+    background-color:rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.buttons__owner{
     display: inherit;
     justify-content: center;
     width: 95%;
@@ -61,14 +72,14 @@
     margin-bottom: 7px;
 }
 
-.subtitle__text__teacherregister{
+.subtitle__text__owner{
     font-family: var(--nunito);
     font-size: 18px;
     color: var(--caribbean-current);
     margin-bottom: 7px;
 }
 
-.footer__text__teacherregister{
+.footer__text__owner{
     font-family: var(--nunito);
     font-size: 14px;
     font-weight: 700;

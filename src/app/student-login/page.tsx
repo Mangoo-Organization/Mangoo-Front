@@ -20,7 +20,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             <p>ESPAÇO PARA O CARROSSEL</p>
         </div>
 
-        <div className='space'>
+        <div className='space__student'>
             {/*Spacing between divs*/}
         </div>
 
@@ -35,26 +35,26 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             />
             </div>
             
-            <p className='titulo__card'>Faça seu Login</p>
+            <p className='titulo__card__student'>Faça seu Login</p>
             
-            <div className="div__line"></div>
+            <div className="div__line__student"></div>
 
-            <div className="container__inputs">
+            <div className="container__inputs__student">
                 
-                <p className='subtitle__text'>E-mail<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__student'>E-mail<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Email Ex: aluno@instituição.com' style={{ width: '380px'}}/>
 
-                <p className='subtitle__text'>Senha<span className='asterisk'>*</span></p>
+                <p className='subtitle__text__student'>Senha<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Senha' style={{ width: '380px'}}/>
 
-                <p className='password__text'>Esqueceu sua senha?</p>
+                <p className='password__text__student'>Esqueceu sua senha?</p>
 
             </div>
 
-            <div className="buttons">
+            <div className="buttons__student">
                 <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Login</Button.Focused>    
             </div>
-            <p className='footer__text'>Não possui conta? Realize seu cadastro aqui</p>
+            <p className='footer__text__student'>Não possui conta? Realize seu cadastro aqui</p>
         </div>
     </div>
     </div>
