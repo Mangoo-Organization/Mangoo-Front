@@ -40,7 +40,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
                 <p className='text__container__forgotconfirm'>Verifique seu email para redefinir sua senha. Caso não tenha chegado verifique a caixa de Spam.</p>
                 
                 <div className='button__forgotconfirm'>
-                <Button.Transparent extra style={{ width: '182px', margin:'0px'}}>Cancelar</Button.Transparent>
+                <Button.Transparent extra style={{ width: '182px', margin:'0px'}}>Voltar</Button.Transparent>
                 </div>
             </div>
 

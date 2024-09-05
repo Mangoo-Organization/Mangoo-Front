@@ -21,9 +21,6 @@ import ForgotPasswordChange from "./forgot-password-change/page";
 
 export default function Home() {
   return (
-    /*<OwnerLogin></OwnerLogin>*/
-    /*<ForgotPassword></ForgotPassword>*/
-    /*<ForgotPasswordConfirm></ForgotPasswordConfirm>*/
-    <ForgotPasswordChange></ForgotPasswordChange>
+    <ForgotPasswordConfirm></ForgotPasswordConfirm>
   );
 }
