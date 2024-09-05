@@ -31,12 +31,12 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
                 src={MangooIcon}
                 alt='mangoo icon'
                 width={53}
-                height={49
-                }
+                height={49}
             />
             </div>
-
+            
             <p className='titulo__card'>Crie sua conta</p>
+            
             <div className="div__line"></div>
 
             <div className="container__inputs">
