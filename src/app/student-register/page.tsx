@@ -7,6 +7,7 @@ import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
 import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
+import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
 
  const StudentRegister = () => {
   return (
@@ -20,17 +21,20 @@ import MangooIcon from '../../../public/icones/mangoo-icon.svg'
         </div>
 
         <div className='space'>
-
+            {/*Spacing between divs*/}
         </div>
 
         <div className="student__card">
             
+            <div className='logo__card'>
             <Image
                 src={MangooIcon}
                 alt='mangoo icon'
-                width={25}
-                height={25}
+                width={53}
+                height={49
+                }
             />
+            </div>
 
             <p className='titulo__card'>Crie sua conta</p>
             <div className="div__line"></div>
@@ -38,19 +42,19 @@ import MangooIcon from '../../../public/icones/mangoo-icon.svg'
             <div className="container__inputs">
 
                 <p className='subtitle__text'>Nome completo<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Seu nome'/>
-
+                <InputSimple extra placeholder='Seu nome' style={{ width: '380px'}}/>
+                
                 <p className='subtitle__text'>E-mail<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Seu Email'/>
+                <InputSimple extra placeholder='Seu Email' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text'>Senha<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Digite sua senha'/>
+                <InputSimple extra placeholder='Digite sua senha' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text'>Confirmação de senha<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Confirme sua senha'/>
+                <InputSimple extra placeholder='Confirme sua senha' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text'>Código da instituição<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Código fornecido pela instituição'/>
+                <InputSimple extra placeholder='Código fornecido pela instituição' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text'>Como podemos te chamar?<span className='asterisk'>*</span></p>
                 <Dropdown options={["opção 1", "opção 2", "opção 3", "opção 4"]}  placeholder="selecione a opção escolhida" title="Como podemos te chamar?" onOptionClick={console.log}/>
@@ -58,7 +62,7 @@ import MangooIcon from '../../../public/icones/mangoo-icon.svg'
             </div>
 
             <div className="buttons">
-                <Button.Focused extra>Criar conta</Button.Focused>    
+                <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Criar conta</Button.Focused>    
             </div>
             <p className='footer__text'>Já possui uma conta? Clique aqui</p>
         </div>
