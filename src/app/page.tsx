@@ -11,9 +11,12 @@ import FourthModal from './components/Modals/FourthModal';
 import ProfilePhoto from "./components/ProfilePhoto/ProfilePhoto";
 import Information from "./information/page";
 import StudentRegister from "./student-register/page";
+import StudentLogin from "./student-login/page";
+import TeacherRegister from "./teacher-register/page";
+import TeacherLogin from "./teacher-login/page";
 
 export default function Home() {
   return (
-    <StudentRegister></StudentRegister>
+    <TeacherLogin></TeacherLogin>
   );
 }
