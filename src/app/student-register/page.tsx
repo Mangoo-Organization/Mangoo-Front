@@ -42,13 +42,13 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             <div className="container__inputs">
 
                 <p className='subtitle__text'>Nome completo<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Seu nome' style={{ width: '380px'}}/>
+                <InputSimple extra placeholder='Nome Completo' style={{ width: '380px'}}/>
                 
                 <p className='subtitle__text'>E-mail<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Seu Email' style={{ width: '380px'}}/>
+                <InputSimple extra placeholder='Email Ex: aluno@instituição.com' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text'>Senha<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Digite sua senha' style={{ width: '380px'}}/>
+                <InputSimple extra placeholder='Senha' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text'>Confirmação de senha<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Confirme sua senha' style={{ width: '380px'}}/>
@@ -57,7 +57,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
                 <InputSimple extra placeholder='Código fornecido pela instituição' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text'>Como podemos te chamar?<span className='asterisk'>*</span></p>
-                <Dropdown options={["opção 1", "opção 2", "opção 3", "opção 4"]}  placeholder="selecione a opção escolhida" title="Como podemos te chamar?" onOptionClick={console.log}/>
+                <Dropdown options={["opção 1", "opção 2", "opção 3", "opção 4"]}  placeholder="selecione a opção preferida" title="Como podemos te chamar?" onOptionClick={console.log}/>
 
             </div>
 
