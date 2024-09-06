@@ -7,6 +7,7 @@ import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
 import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
+import Students from '../../../public/icones/school_students.svg'
 import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
 
  const OwnerLogin = () => {
@@ -17,7 +18,14 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
     <div className='page__owner'>
 
         <div className='intro__owner'>
-            <p>ESPAÇO PARA O CARROSSEL</p>
+            <p className='titulo__owner'>Bem-Vindo Proprietário!</p>
+            <p className='subtitle__owner'>Faça o acesso da sua conta por aqui</p>
+            <Image
+                src={Students}
+                alt='school students'
+                width={750}
+                height={534}
+            />
         </div>
 
         <div className='space__owner'>
@@ -42,7 +50,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             <div className="container__inputs__owner">
                 
                 <p className='subtitle__text__owner'>E-mail<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Email Ex: prorpietario@instituição.com' style={{ width: '380px'}}/>
+                <InputSimple extra placeholder='Email Ex: proprietario@instituição.com' style={{ width: '380px'}}/>
 
                 <p className='subtitle__text__owner'>Senha<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Senha' style={{ width: '380px'}}/>
