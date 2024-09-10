@@ -1,0 +1,101 @@
+.container__choosen{
+    margin: auto;
+    margin-top: 88px;
+    margin-bottom: 95px; /*view the page better*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: line;
+    width: 1441px;
+    height: 768px;
+}
+
+.student__choosen{
+    margin-right: 35px;
+    width: 457px;
+    height: 769px;
+    border-radius: 38px;
+    background-color: var(--jungle-green);
+    box-shadow: 8px 8px 4px 0px var(--caribbean-current);
+    background-image: url('../../../public/icones/student_choosen1.svg');
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.student__choosen:hover{
+    transition: 0.25s;
+    border-radius: 38.665px;
+    box-shadow: 10px 10px 10px 0px var(--brunswick-green);
+    background-color: var(--caribbean-current);
+    background-image: url('../../../public/icones/student_choosen2.svg');
+    cursor: pointer;
+}
+
+.teacher__choosen{
+    margin-right: 35px;
+    width: 457px;
+    height: 769px;
+    border-radius: 38px;
+    background-color: var(--caribbean-current);
+    box-shadow: 8px 8px 4px 0px var(--caribbean-current);
+    background-image: url('../../../public/icones/teacher_choosen1.svg');
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.teacher__choosen:hover{
+    transition: 0.25s;
+    border-radius: 38.665px;
+    box-shadow: 10px 10px 10px 0px var(--caribbean-current);
+    background-color: var(--brunswick-green);
+    background-image: url('../../../public/icones/teacher_choosen2.svg');
+    cursor: pointer;
+}
+
+.owner__choosen{
+    width: 457px;
+    height: 769px;
+    border-radius: 38px;
+    background-color: var(--sandy-brown);
+    box-shadow: 8px 8px 4px 0px var(--safity-orange);
+    background-image: url('../../../public/icones/owner_choosen1.svg');
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.owner__choosen:hover{
+    transition: 0.25s;
+    border-radius: 38.665px;
+    box-shadow: 10px 10px 10px 0px var(--safity-orange);
+    background-color: var(--safity-orange);
+    background-image: url('../../../public/icones/owner_choosen2.svg');
+    cursor: pointer;
+}
+
+/* CÓDIGO BASE PARA REFATORAÇÃO
+
+
+.container__text__choosen{
+    padding-top: 35px;
+}
+
+.choosen__title{
+    font-family: var(--poppins);
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+.choosen__subtitle{
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--brunswick-green);
+    text-align: center;
+    width: 346px;
+    margin: 0px auto;
+}
+
+*/
