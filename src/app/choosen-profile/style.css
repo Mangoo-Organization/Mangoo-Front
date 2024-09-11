@@ -18,16 +18,16 @@
     background-color: var(--jungle-green);
     box-shadow: 8px 8px 4px 0px var(--caribbean-current);
     background-image: url('../../../public/icones/student_choosen1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
-    transition: 0.25s;
+    transition: 2s;
+    overflow: hidden;
 }
 
 .student__choosen:hover{
-    transition: 0.25s;
-    border-radius: 38.665px;
     box-shadow: 10px 10px 10px 0px var(--brunswick-green);
     background-color: var(--caribbean-current);
-    background-image: url('../../../public/icones/student_choosen2.svg');
     cursor: pointer;
 }
 
@@ -39,16 +39,16 @@
     background-color: var(--caribbean-current);
     box-shadow: 8px 8px 4px 0px var(--caribbean-current);
     background-image: url('../../../public/icones/teacher_choosen1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
-    transition: 0.25s;
+    transition: 2s;
+    overflow: hidden;
 }
 
 .teacher__choosen:hover{
-    transition: 0.25s;
-    border-radius: 38.665px;
-    box-shadow: 10px 10px 10px 0px var(--caribbean-current);
+    box-shadow: 10px 10px 10px 0px var(--brunswick-green);
     background-color: var(--brunswick-green);
-    background-image: url('../../../public/icones/teacher_choosen2.svg');
     cursor: pointer;
 }
 
@@ -59,21 +59,20 @@
     background-color: var(--sandy-brown);
     box-shadow: 8px 8px 4px 0px var(--safity-orange);
     background-image: url('../../../public/icones/owner_choosen1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
-    transition: 0.25s;
+    transition: 2s;
+    overflow: hidden;
 }
 
 .owner__choosen:hover{
-    transition: 0.25s;
-    border-radius: 38.665px;
     box-shadow: 10px 10px 10px 0px var(--safity-orange);
     background-color: var(--safity-orange);
-    background-image: url('../../../public/icones/owner_choosen2.svg');
     cursor: pointer;
 }
 
-/* CÓDIGO BASE PARA REFATORAÇÃO
-
+/*text*/
 
 .container__text__choosen{
     padding-top: 35px;
@@ -98,4 +97,71 @@
     margin: 0px auto;
 }
 
-*/
+.choosen__subtitle__alt{ /*white version*/
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    width: 346px;
+    margin: 0px auto;
+}
+
+/*images*/
+
+.container__img__student{
+    margin-left: -50px;
+}
+
+.container__img__student:hover{
+    overflow: hidden;
+    animation: student 2s forwards; /*import animation*/
+}
+
+.container__img__teacher{
+    margin-left: -130px;
+}
+
+.container__img__teacher:hover{
+    overflow: hidden;
+    animation: teacher 2s forwards; /*import animation*/
+}
+
+.container__img__owner{
+    margin-top: 10px;
+    margin-left: -200px;
+}
+
+.container__img__owner:hover{
+    overflow: hidden;
+    animation: owner 2s forwards; /*import animation*/
+}
+
+/*animations*/
+
+@keyframes student {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(30px, 30px);
+    }
+  }
+
+@keyframes teacher {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0px, 30px);
+    }
+  }
+
+  @keyframes owner {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0px, 30px);
+    }
+  }
