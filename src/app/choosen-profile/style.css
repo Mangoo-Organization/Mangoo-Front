@@ -21,7 +21,7 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: 2s;
+    transition: 1.5s;
     overflow: hidden;
 }
 
@@ -37,12 +37,12 @@
 
 .student__choosen:hover .container__img__student{ /*hover student*/
     overflow: hidden;
-    animation: student 2s forwards;
+    animation: student 1.5s forwards;
 }
 
 .student__choosen:not(hover) .container__img__student{ /*image returns to its original position*/
     overflow: hidden;
-    animation: student-reverse 2s forwards;
+    animation: student-reverse 1.5s forwards;
 }
 
 .teacher__choosen{
@@ -56,7 +56,7 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: 2s;
+    transition: 1.5s;
     overflow: hidden;
 }
 
@@ -72,12 +72,12 @@
 
 .teacher__choosen:hover .container__img__teacher{ /*hover teacher*/
     overflow: hidden;
-    animation: teacher 2s forwards;
+    animation: teacher 1.5s forwards;
 }
 
 .teacher__choosen:not(hover) .container__img__teacher{ /*image returns to its original position*/
     overflow: hidden;
-    animation: teacher-reverse 2s forwards;
+    animation: teacher-reverse 1.5s forwards;
 }
 
 .owner__choosen{
@@ -90,7 +90,7 @@
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: 2s;
+    transition: 1.5s;
     overflow: hidden;
 }
 
@@ -106,12 +106,12 @@
 
 .owner__choosen:hover .container__img__owner{ /*hover owner*/
     overflow: hidden;
-    animation: owner 2s forwards; 
+    animation: owner 1.5s forwards; 
 }
 
 .owner__choosen:not(hover) .container__img__owner{ /*image returns to its original position*/
     overflow: hidden;
-    animation: owner-reverse 2s forwards;
+    animation: owner-reverse 1.5s forwards;
 }
 
 /*texts*/
