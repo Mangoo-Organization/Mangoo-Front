@@ -1,0 +1,214 @@
+.container__choosen{
+    margin: auto;
+    margin-top: 88px;
+    margin-bottom: 95px; /*view the page better*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: line;
+    width: 1441px;
+    height: 768px;
+}
+
+.student__choosen{
+    margin-right: 35px;
+    width: 457px;
+    height: 769px;
+    border-radius: 38px;
+    background-color: var(--jungle-green);
+    box-shadow: 8px 8px 4px 0px var(--caribbean-current);
+    background-image: url('../../../public/icones/student_choosen1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 1.5s;
+    overflow: hidden;
+}
+
+.student__choosen:hover{ /*hover background*/
+    box-shadow: 10px 10px 10px 0px var(--brunswick-green);
+    background-color: var(--caribbean-current);
+    cursor: pointer;
+}
+
+.student__choosen:hover .choosen__subtitle{ /*hover subtitle*/
+    color: white;
+}
+
+.student__choosen:hover .container__img__student{ /*hover student*/
+    overflow: hidden;
+    animation: student 1.5s forwards;
+}
+
+.student__choosen:not(hover) .container__img__student{ /*image returns to its original position*/
+    overflow: hidden;
+    animation: student-reverse 1.5s forwards;
+}
+
+.teacher__choosen{
+    margin-right: 35px;
+    width: 457px;
+    height: 769px;
+    border-radius: 38px;
+    background-color: var(--caribbean-current);
+    box-shadow: 8px 8px 4px 0px var(--caribbean-current);
+    background-image: url('../../../public/icones/teacher_choosen1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 1.5s;
+    overflow: hidden;
+}
+
+.teacher__choosen .choosen__subtitle{ /*subtitle text color*/
+    color:white;
+}
+
+.teacher__choosen:hover{ /*hover background*/
+    box-shadow: 10px 10px 10px 0px var(--brunswick-green);
+    background-color: var(--brunswick-green);
+    cursor: pointer;
+}
+
+.teacher__choosen:hover .container__img__teacher{ /*hover teacher*/
+    overflow: hidden;
+    animation: teacher 1.5s forwards;
+}
+
+.teacher__choosen:not(hover) .container__img__teacher{ /*image returns to its original position*/
+    overflow: hidden;
+    animation: teacher-reverse 1.5s forwards;
+}
+
+.owner__choosen{
+    width: 457px;
+    height: 769px;
+    border-radius: 38px;
+    background-color: var(--sandy-brown);
+    box-shadow: 8px 8px 4px 0px var(--safity-orange);
+    background-image: url('../../../public/icones/owner_choosen1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 1.5s;
+    overflow: hidden;
+}
+
+.owner__choosen:hover{ /*background hover*/
+    box-shadow: 10px 10px 10px 0px var(--safity-orange);
+    background-color: var(--safity-orange);
+    cursor: pointer;
+}
+
+.owner__choosen:hover .choosen__subtitle{ /*hover subtitle*/
+    color: white;
+}
+
+.owner__choosen:hover .container__img__owner{ /*hover owner*/
+    overflow: hidden;
+    animation: owner 1.5s forwards; 
+}
+
+.owner__choosen:not(hover) .container__img__owner{ /*image returns to its original position*/
+    overflow: hidden;
+    animation: owner-reverse 1.5s forwards;
+}
+
+/*texts*/
+
+.container__text__choosen{
+    padding-top: 35px;
+}
+
+.choosen__title{
+    font-family: var(--poppins);
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+.choosen__subtitle{
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--brunswick-green);
+    text-align: center;
+    width: 346px;
+    margin: 0px auto;
+    transition: 1.25s;
+}
+
+/*images containers*/
+
+.container__img__student{
+    margin-left: -50px;
+}
+
+.container__img__teacher{
+    margin-left: -130px;
+}
+
+.container__img__owner{
+    margin-top: 10px;
+    margin-left: -200px;
+}
+
+/*animations*/
+
+@keyframes student {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(30px, 30px);
+    }
+  }
+
+@keyframes teacher {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0px, 30px);
+    }
+  }
+
+@keyframes owner {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(30px, 30px);
+    }
+  }
+
+/*alt animations*/
+
+@keyframes student-reverse { 
+    0% {
+      transform: translate(30px, 30px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+@keyframes teacher-reverse {
+    0% {
+      transform: translate(0, 30px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  @keyframes owner-reverse {
+    0% {
+      transform: translate(30px, 30px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
