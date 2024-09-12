@@ -34,7 +34,7 @@ import Owner from '../../../public/icones/owner_choosen2.svg'
             <div className='teacher__choosen'>
               <div className='container__text__choosen'>
                 <p className='choosen__title'>Professor</p>
-                <p className='choosen__subtitle__alt'>Clique aqui para fazer Login ou cadastrar-se</p>
+                <p className='choosen__subtitle'>Clique aqui para fazer Login ou cadastrar-se</p>
                 <div className='container__img__teacher'>
                 <Image
                   src={Teacher}
