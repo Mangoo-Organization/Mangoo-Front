@@ -1,0 +1,92 @@
+.tokenedit__container{
+    display: flex;
+}
+
+.tokenedit__sidebar{
+    margin-left: auto;
+
+}
+
+
+.tokenedit__card{
+    width: 70rem;
+    height: 53.275rem;
+    background-color: white;
+    padding: 1.25rem;
+    margin:auto;
+    border-radius: 24px;
+}
+
+.tokenedit__info{
+    margin-left: 50px;
+    margin-right: 220px;
+
+}
+
+.tokenedit__info h3{
+    color: var(--brunswick-green);
+    font-weight: 400;
+    border-bottom: 1.2px solid var(--safity-orange);
+    font-family: var(--poppins);
+    margin-bottom: 5px;
+
+}
+.tokenedit__info p{
+    font-size: 18px;
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    font-weight: 400;
+    margin-top: 1px;
+}
+
+.tokenedit__tokenphoto{
+    display: flex;
+}
+
+.tokenedit__button-foto{
+    /* grid */
+    height: 120px;
+    display: grid;
+    align-items: end;
+    margin-top: 90px;
+           
+}
+
+.tokenedit__dados{
+    margin-left: 50px;
+    margin-right: 220px;
+}
+
+.tokenedit__dados-titulo{
+    border-bottom: 1px solid var(--french-gray);
+    font-size: 20px;
+    color: var(--french-gray);
+    font-family: var(--poppins);
+
+}
+
+.input__data{
+    display: flex;
+}
+.boxes{
+    margin-right: 15px;
+}
+.owneredit__text{
+    font-family: var(--nunito);
+    font-weight: 400;
+    font-size: 18px;
+    /* cor diferente das telas anteriores */
+    color: var(--brunswick-green);
+}
+
+.asterisk{
+    color: var(--safity-orange);
+    font-size: 18px;
+}
+.tokenedit__buttons{
+    text-align: end;
+    margin-right: 83px;
+    margin-top: 160px;
+    
+}
+

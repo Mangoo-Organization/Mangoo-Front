@@ -100,6 +100,12 @@
     margin-right: 15px;
 }
 
+.information__text{
+    font-family: var(--nunito);
+    font-size: 18px;
+    color: var(--caribbean-current);
+}
+
 .information__checkbox{
     margin-top: 40px;
 }

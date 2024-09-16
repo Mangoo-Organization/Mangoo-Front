@@ -1,0 +1,86 @@
+.owneredit__container{
+    display: flex;
+}
+
+.owneredit__card{
+    width: 70rem;
+    height: 53.275rem;
+    background-color: white;
+    padding: 1.25rem;
+    margin:auto;
+    border-radius: 24px;
+}
+
+.owneredit__info{
+    margin-left: 50px;
+    margin-right: 220px;
+
+}
+.owneredit__info h3{
+    color: var(--brunswick-green);
+    font-weight: 400;
+    border-bottom: 1.2px solid var(--safity-orange);
+    font-family: var(--poppins);
+    margin-bottom: 5px;
+
+}
+.owneredit__info p{
+    font-size: 18px;
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    font-weight: 400;
+    margin-top: 1px;
+}
+
+.owneredit__profilephoto{
+    display: flex;
+}
+.owneredit__button-foto{
+    /* grid */
+    height: 120px;
+    display: grid;
+    align-items: end;
+    margin-top: 90px;
+
+                
+}
+
+.owneredit__dados{
+    margin-left: 50px;
+    margin-right: 220px;
+}
+.owneredit__dados-titulo{
+    border-bottom: 1px solid var(--french-gray);
+    font-size: 20px;
+    color: var(--french-gray);
+    font-family: var(--poppins);
+
+}
+.input__data{
+    display: flex;
+}
+.boxes{
+    margin-right: 15px;
+}
+.owneredit__text{
+    font-family: var(--nunito);
+    font-weight: 400;
+    font-size: 18px;
+    /* cor diferente das telas anteriores */
+    color: var(--brunswick-green);
+}
+
+
+.owneredit__sidebar{
+    margin-left: auto;
+
+}
+
+.asterisk{
+    color: var(--safity-orange);
+    font-size: 18px;
+}
+.owneredit__buttons{
+    text-align: end;
+    margin-right: 83px;
+}
