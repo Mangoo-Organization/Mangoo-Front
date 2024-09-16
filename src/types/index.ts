@@ -17,3 +17,9 @@ export interface DropdownProps{
 export interface CheckboxProps{
     content:string
 }
+
+export interface SidebarProps{
+    text1:string,
+    text2:string,
+    text3:string,
+}

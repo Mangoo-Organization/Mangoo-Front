@@ -1,9 +1,11 @@
-.sidebar__container{
-    width: 20.436rem;
-    height: 54.525rem ;
+.sidebar__card{
+    width: 19.2rem;
+    height: 53.275rem ;
     background-color: white;
     border-radius:24px;
     padding: 20px;
+    margin: 20px;
+    
     
 }
 

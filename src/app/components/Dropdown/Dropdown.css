@@ -4,8 +4,9 @@
 
 .dropdown__box{
     cursor: pointer;
-    background-color: var(--baby-powder);
-    width: 21.875rem;
+    background-color: white;
+    width:  24rem;
+    height: 2.85rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,13 +23,14 @@
     display: flex;
     position:absolute;
     background-color: var(--baby-powder);
-    width: 21rem;
+    /* 26.25rem */
+    width:  22rem ;
     margin-left: 0.4rem;
     border-radius: 8px;
     
 }
 .dropdown__option{
-    width: 20rem;
+    width: 22rem;
     list-style-type: none;
     display: flex;
     justify-content: start;

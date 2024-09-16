@@ -46,15 +46,15 @@ export default function Information() {
 
                         <div className="input__data1">
                             <div className='boxes'>
-                                <p className='institution__text'>Nome Completo<span className='asterisk'>*</span></p>
+                                <p className='information__text'>Nome Completo<span className='asterisk'>*</span></p>
                                 <InputSimple extra placeholder='Nome da instituição'/>
                             </div>
                             <div className='boxes'>
-                                <p className='institution__text'>Telefone 1<span className='asterisk'>*</span></p>
+                                <p className='information__text'>Telefone 1<span className='asterisk'>*</span></p>
                                 <InputSimple  placeholder='Nome da instituição'/>
                             </div>
                             <div>
-                                <p className='institution__text'>Telefone 2 <span> - Opcional</span></p>
+                                <p className='information__text'>Telefone 2 </p>
                                 <InputSimple  placeholder='Nome da instituição'/>
                             </div>
                         </div>
@@ -62,11 +62,11 @@ export default function Information() {
 
                         <div className="input__data2">
                             <div className='boxes'>
-                                <p className='institution__text'>CPF<span className='asterisk'>*</span></p>
+                                <p className='information__text '>CPF<span className='asterisk'>*</span></p>
                                 <InputSimple  placeholder='Nome da instituição'/>
                             </div>
                             <div>
-                                <p className='institution__text'>Como podemos te chamar?<span className='asterisk'>*</span></p>
+                                <p className='information__text'>Como podemos te chamar?<span className='asterisk'>*</span></p>
                                 <Dropdown options={["ele/dele", "ela/dela"]} onOptionClick={console.log} title="Pronomes" placeholder="Selecione a opção preferida"/>
                             </div>
                         </div>
