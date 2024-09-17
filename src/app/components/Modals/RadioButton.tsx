@@ -8,6 +8,7 @@ interface RadioButtonProps {
 const RadioButton: React.FC<RadioButtonProps> = ({ checkedId }) => {
   return (
     <div className="radio-container">
+      
       <label className='radio-label'>
         <input type="radio" name="example" id="radio1" checked={checkedId === 'radio1'} readOnly />
         {/*Opção 1*/}
