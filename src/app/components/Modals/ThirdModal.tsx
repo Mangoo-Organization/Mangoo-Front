@@ -2,7 +2,7 @@ import React from 'react';
 import './ThirdModal.css';
 import * as Button from '../Button/Button';
 import Image from 'next/image';
-
+import RadioButton from './RadioButton';
 
 const ThirdModal = ({ onNext, onPrevious, onClose }: { onNext: () => void, onPrevious: () => void, onClose: () => void }) => {
 
@@ -44,14 +44,7 @@ const ThirdModal = ({ onNext, onPrevious, onClose }: { onNext: () => void, onPre
                 
                 <div className="modal-footer">
                     <Button.DarkGreen onClick={onPrevious}>Voltar</Button.DarkGreen>
-                    <div className='image-container2'>
-                    <Image
-                    src='./icones/green_balls3.svg'
-                    alt='green balls three'
-                    width={100}
-                    height={11}
-                    />
-                    </div>
+                    <RadioButton checkedId="radio3" />
                     <Button.DarkGreen  onClick={onNext}>Avançar</Button.DarkGreen>
                 </div>
             </div>

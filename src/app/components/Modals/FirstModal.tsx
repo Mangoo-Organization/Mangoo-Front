@@ -2,6 +2,7 @@ import React from 'react';
 import './FirstModal.css';
 import * as Button from '../Button/Button';
 import Image from 'next/image';
+import RadioButton from './RadioButton';
 
 
 const FirstModal  = ({ onNext, onClose }: { onNext: () => void, onClose: () => void }) => {
@@ -38,15 +39,8 @@ const FirstModal  = ({ onNext, onClose }: { onNext: () => void, onClose: () => v
 
                 </div>
                 
-                <div className="modal-footer">
-                    <div className='image-container2'>
-                    <Image
-                    src='./icones/green_balls1.svg'
-                    alt='green balls one'
-                    width={100}
-                    height={11}
-                    />
-                    </div>
+                <div className="modal-footer-modal1">
+                    <RadioButton checkedId="radio1" />
                     <Button.DarkGreen onClick={onNext}>Avançar</Button.DarkGreen>
                 </div>
             </div>

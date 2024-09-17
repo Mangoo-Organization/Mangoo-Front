@@ -2,7 +2,7 @@ import React from 'react';
 import './SecondModal.css';
 import * as Button from '../Button/Button';
 import Image from 'next/image';
-
+import RadioButton from './RadioButton';
 
 const SecondModal = ({ onNext, onPrevious, onClose }: { onNext: () => void, onPrevious: () => void, onClose: () => void }) => {
 
@@ -44,14 +44,7 @@ const SecondModal = ({ onNext, onPrevious, onClose }: { onNext: () => void, onPr
                 
                 <div className="modal-footer">
                     <Button.DarkGreen onClick={onPrevious}>Voltar</Button.DarkGreen>
-                    <div className='image-container2'>
-                    <Image
-                    src='./icones/green_balls2.svg'
-                    alt='green balls two'
-                    width={100}
-                    height={11}
-                    />
-                    </div>
+                    <RadioButton checkedId="radio2" />
                     <Button.DarkGreen  onClick={onNext}>Avançar</Button.DarkGreen>
                 </div>
             </div>

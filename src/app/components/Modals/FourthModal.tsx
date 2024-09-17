@@ -2,7 +2,7 @@ import React from 'react';
 import './FourthModal.css';
 import * as Button from '../Button/Button';
 import Image from 'next/image';
-
+import RadioButton from './RadioButton';
 
 const FourthModal = ({ onPrevious, onClose }: { onPrevious: () => void, onClose: () => void }) => {
 
@@ -40,14 +40,7 @@ const FourthModal = ({ onPrevious, onClose }: { onPrevious: () => void, onClose:
                 
                 <div className="modal-footer">
                     <Button.DarkGreen onClick={onPrevious}>Voltar</Button.DarkGreen>
-                    <div className='image-container2'>
-                    <Image
-                    src='./icones/green_balls4.svg'
-                    alt='green balls three'
-                    width={100}
-                    height={11}
-                    />
-                    </div>
+                    <RadioButton checkedId="radio4" />
                     <Button.Focused onClick={onClose}>Começar</Button.Focused>
                 </div>
             </div>
