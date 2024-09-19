@@ -5,9 +5,9 @@ import './carouselteacher.css';
 const CarouselTeacher: React.FC = () => {
   // Lista de URLs das imagens do carrossel
   const images = [
-    'https://via.placeholder.com/600x400?text=Image+1',
-    'https://via.placeholder.com/600x400?text=Image+2',
-    'https://via.placeholder.com/600x400?text=Image+3',
+    '/icones/carousel_teacher1.svg',
+    '/icones/carousel_teacher2.svg',
+    '/icones/carousel_teacher3.svg',
   ];
 
   // Estado para o índice da imagem atual

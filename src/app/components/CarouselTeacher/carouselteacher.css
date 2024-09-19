@@ -1,79 +1,79 @@
 /* Container principal do carrossel */
 .carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Ajuste conforme necessário */
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  /* Container das imagens do carrossel */
-  .carousel-images {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Ajuste conforme necessário */
-  }
-  
-  /* Estilo para cada imagem do carrossel */
-  .carousel-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
-    opacity: 0; /* Imagem invisível por padrão */
-  }
-  
-  /* Imagem ativa (visível) */
-  .carousel-image.active {
-    opacity: 1;
-  }
-  
-  /* Controles de navegação (radio buttons) */
-  .carousel-controls {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  /* Estilo dos radio buttons */
-  .carousel-controls input[type="radio"] {
-    appearance: none;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    cursor: pointer;
-    margin: 0 5px;
-  }
-  
-  /* Estilo do radio button selecionado */
-  .carousel-controls input[type="radio"]:checked {
-    background-color: #000;
-  }
-  
-  /* Botões de navegação (avançar e voltar) */
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    z-index: 1;
-  }
-  
-  /* Botão de navegação para a imagem anterior */
-  .carousel-button.prev {
-    left: 10px;
-  }
-  
-  /* Botão de navegação para a próxima imagem */
-  .carousel-button.next {
-    right: 10px;
-  }
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Ajuste conforme necessário */
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Container das imagens do carrossel */
+.carousel-images {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajuste conforme necessário */
+}
+
+/* Estilo para cada imagem do carrossel */
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+  opacity: 0; /* Imagem invisível por padrão */
+}
+
+/* Imagem ativa (visível) */
+.carousel-image.active {
+  opacity: 1;
+}
+
+/* Controles de navegação (radio buttons) */
+.carousel-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Estilo dos radio buttons */
+.carousel-controls input[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Estilo do radio button selecionado */
+.carousel-controls input[type="radio"]:checked {
+  background-color: #000;
+}
+
+/* Botões de navegação (avançar e voltar) */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+
+/* Botão de navegação para a imagem anterior */
+.carousel-button.prev {
+  left: 10px;
+}
+
+/* Botão de navegação para a próxima imagem */
+.carousel-button.next {
+  right: 10px;
+}
