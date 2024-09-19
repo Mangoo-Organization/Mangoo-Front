@@ -2,9 +2,9 @@ import React from 'react';
 import './SecondModal.css';
 import * as Button from '../Button/Button';
 import Image from 'next/image';
+import RadioButton from './RadioButton';
 
-
-const SecondModal = () => {
+const SecondModal = ({ onNext, onPrevious, onClose }: { onNext: () => void, onPrevious: () => void, onClose: () => void }) => {
 
     return (
         <div className="modal-overlay">
@@ -16,6 +16,8 @@ const SecondModal = () => {
                     alt='close modal button'
                     width={25}
                     height={25}
+                    onClick={onClose}
+                    style={{ cursor: 'pointer' }}
                     />
                 </div>
 
@@ -41,16 +43,9 @@ const SecondModal = () => {
                 </div>
                 
                 <div className="modal-footer">
-                    <Button.DarkGreen>Voltar</Button.DarkGreen>
-                    <div className='image-container2'>
-                    <Image
-                    src='./icones/green_balls2.svg'
-                    alt='green balls two'
-                    width={100}
-                    height={11}
-                    />
-                    </div>
-                    <Button.DarkGreen>Avançar</Button.DarkGreen>
+                    <Button.DarkGreen onClick={onPrevious}>Voltar</Button.DarkGreen>
+                    <RadioButton checkedId="radio2" />
+                    <Button.DarkGreen  onClick={onNext}>Avançar</Button.DarkGreen>
                 </div>
             </div>
         </div>

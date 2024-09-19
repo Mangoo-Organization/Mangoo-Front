@@ -1,0 +1,24 @@
+/* Container principal para os radio buttons */
+.radio-container {
+    display: flex;
+    flex-direction: line;
+    height: 25px;
+  }
+  
+  /* Estilização da label dos botões */
+  .radio-label {
+    align-items: center;
+  }
+
+.radio-label input[type="radio"] {
+    appearance: none; /* Esconde o botão de rádio padrão */
+    width: 12px;
+    height: 12px;
+    background-color: var(--aquamarine);
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  .radio-label input[type="radio"]:checked {
+    background-color: var(--caribbean-current);
+  }
