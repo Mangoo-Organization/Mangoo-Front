@@ -62,7 +62,7 @@ const CarouselTeacher: React.FC = () => {
       />
       </div>
 
-      <div className="carousel-controls">
+      <div className="radio-label">
         {/* Radio buttons para navegação entre as imagens */}
         {images.map((_, index) => (
           <input
@@ -74,6 +74,7 @@ const CarouselTeacher: React.FC = () => {
           />
         ))}
       </div>
+
     </div>
   );
 };

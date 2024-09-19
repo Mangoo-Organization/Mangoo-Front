@@ -1,11 +1,11 @@
 /* Container principal do carrossel */
 .carousel-container {
+  display: flex;
+  flex-direction: line;
   position: relative;
+  align-items: center;
   width: 731px;
   height: 762px;
-  margin: auto;
-  overflow: hidden;
-  background-color: red;
 }
 
 /* Container das imagens do carrossel */
@@ -31,42 +31,38 @@
   opacity: 1;
 }
 
-/* Controles de navegação (radio buttons) */
-.carousel-controls {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Estilo dos radio buttons */
-.carousel-controls input[type="radio"] {
-  appearance: none;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  background-color: #ccc;
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-/* Estilo do radio button selecionado */
-.carousel-controls input[type="radio"]:checked {
-  background-color: #000;
-}
-
 /* Botões de navegação (avançar e voltar) */
 .arrow_carousel_left{
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
   cursor: pointer;
-  z-index: 1;
 }
 
 .arrow_carousel_right{
   position: absolute;
-  top: 50%;
-  border: none;
+  left: 92.6%;
   cursor: pointer;
-  z-index: 1;
+}
+
+/* Estilização da label dos botões */
+.radio-label {
+  position: absolute;
+  margin-top: 95%;
+  left: 45%;
+  align-items: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.radio-label input[type="radio"] {
+  appearance: none; /* Esconde o botão de rádio padrão */
+  width: 15px;
+  height: 15px;
+  background-color: var(--aquamarine);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.radio-label input[type="radio"]:checked {
+  background-color: var(--caribbean-current);
 }
