@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import FirstModal from './FirstModal';   // Importe o FirstModal
 import SecondModal from './SecondModal'; // Importe o SecondModal
 import ThirdModal from './ThirdModal';   // Importe o ThirdModal
-import FourthModal from './FourthModal';   // Importe o ThirdModal
+import FourthModal from './FourthModal';   
 
 const ModalContainer = () => {
     const [currentModal, setCurrentModal] = useState(1);
