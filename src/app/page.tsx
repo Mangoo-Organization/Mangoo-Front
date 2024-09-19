@@ -7,10 +7,10 @@ import Checkbox from "./components/CheckBox/Checkbox";
 import ProfilePhoto from "./components/ProfilePhoto/ProfilePhoto";
 import Information from "./information/page";
 import ModalContainer from "./components/Modals/ModalContainer";
-import CarouselTeacher from "./components/CarouselTeacher/carouselteacher";
+import TeacherRegister from "./teacher-register/page";
 
 export default function Home() {
   return (
-    <CarouselTeacher/>
+    <TeacherRegister></TeacherRegister>
   );
 }
