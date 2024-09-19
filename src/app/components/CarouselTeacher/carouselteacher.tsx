@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './carouselteacher.css';
+import Image from 'next/image';
+import left from '../../../../public/icones/left_arrow.svg';
+import right from '../../../../public/icones/right_arrow.svg';
 
 // Componente funcional Carousel
 const CarouselTeacher: React.FC = () => {
@@ -31,8 +34,15 @@ const CarouselTeacher: React.FC = () => {
   return (
     <div className="carousel-container">
       {/* Botão de navegação para a imagem anterior */}
-      <button className="carousel-button prev" onClick={goToPrevious}>◀</button>
-      
+
+      <div className='arrow_carousel_left'>
+      <Image
+            src= {left}
+            alt='left arrow'
+            onClick={goToPrevious}
+      />
+      </div>
+
       <div className="carousel-images">
         {/* Mapeia e exibe as imagens do carrossel */}
         {images.map((image, index) => (
@@ -43,10 +53,15 @@ const CarouselTeacher: React.FC = () => {
           ></div>
         ))}
       </div>
-
-      {/* Botão de navegação para a próxima imagem */}
-      <button className="carousel-button next" onClick={goToNext}>▶</button>
       
+      <div className='arrow_carousel_right'>
+      <Image
+            src= {right}
+            alt='right arrow'
+            onClick={goToNext}
+      />
+      </div>
+
       <div className="carousel-controls">
         {/* Radio buttons para navegação entre as imagens */}
         {images.map((_, index) => (

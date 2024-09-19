@@ -1,27 +1,26 @@
 /* Container principal do carrossel */
 .carousel-container {
   position: relative;
-  width: 100%;
-  max-width: 600px; /* Ajuste conforme necessário */
+  width: 731px;
+  height: 762px;
   margin: auto;
   overflow: hidden;
+  background-color: red;
 }
 
 /* Container das imagens do carrossel */
 .carousel-images {
   position: relative;
-  width: 100%;
-  height: 400px; /* Ajuste conforme necessário */
+  width: 545px;
+  height: 762px;
+  margin: auto;
 }
 
-/* Estilo para cada imagem do carrossel */
 .carousel-image {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  margin: 0;
   background-position: center;
   transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
   opacity: 0; /* Imagem invisível por padrão */
@@ -55,25 +54,19 @@
 }
 
 /* Botões de navegação (avançar e voltar) */
-.carousel-button {
+.arrow_carousel_left{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
   border: none;
-  padding: 10px;
   cursor: pointer;
-  font-size: 20px;
   z-index: 1;
 }
 
-/* Botão de navegação para a imagem anterior */
-.carousel-button.prev {
-  left: 10px;
-}
-
-/* Botão de navegação para a próxima imagem */
-.carousel-button.next {
-  right: 10px;
+.arrow_carousel_right{
+  position: absolute;
+  top: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
 }
