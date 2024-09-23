@@ -8,6 +8,7 @@ import * as Button from '../components/Button/Button'
 import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
 import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
+import CarouselTeacher from '../components/CarouselTeacher/carouselteacher'
 
  const TeacherLogin = () => {
   return (
@@ -17,7 +18,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
     <div className='page__teacher'>
 
         <div className='intro__teacher'>
-            <p>ESPAÇO PARA O CARROSSEL</p>
+        <CarouselTeacher/>
         </div>
 
         <div className='space__teacher'>
