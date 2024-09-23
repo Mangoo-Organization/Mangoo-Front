@@ -19,7 +19,7 @@ export interface CheckboxProps{
 }
 
 export interface SidebarProps{
-    text1:string,
-    text2:string,
-    text3:string,
+    minhaConta:string,
+    instituicao:string,
+    token:string,
 }
