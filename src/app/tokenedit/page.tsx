@@ -13,7 +13,7 @@ const page = () => {
     <NavBar/>
     <div className="tokenedit__container">
         <div className="tokenedit__sidebar">
-            <SideBar text1='sidebar__text' text2='sidebar__text' text3='sidebar__textsub'/>
+            <SideBar minhaConta='sidebar__text' instituicao='sidebar__text' token='sidebar__textsub'/>
         </div>
 
         <div className="tokenedit__card">

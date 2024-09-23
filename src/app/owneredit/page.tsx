@@ -12,7 +12,7 @@ const OwnerEdit = () => {
         <NavBar/>
         <div className="owneredit__container">
             <div className="owneredit__sidebar">
-                <SideBar text1='sidebar__textsub' text2='sidebar__text' text3='sidebar__text'/>
+                <SideBar minhaConta='sidebar__textsub' instituicao='sidebar__text' token='sidebar__text'/>
             </div>
 
             <div className="owneredit__card">
