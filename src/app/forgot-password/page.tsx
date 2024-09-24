@@ -5,11 +5,22 @@ import NavBar from '../components/NavBar/NavBar'
 import Image from 'next/image'
 import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
-import Dropdown from "../components/Dropdown/Dropdown";
 import Pana from '../../../public/icones/forgot_password_pana.svg' 
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
+import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
 
  const ForgotPassword = () => {
+
+    const router = useRouter();
+
+    const handleSendClick = () => {
+      router.push('/forgot-password-confirm');
+    }
+  
+    const handleCancelClick = () => {
+        router.back();
+    }
+  
+
   return (
     <div>
         <NavBar/>
@@ -45,8 +56,8 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             </div>
 
             <div className="buttons__forgot">
-                <Button.Focused extra style={{ width: '182px', margin: '0px', marginBottom: '10px'}}>Enviar</Button.Focused>
-                <Button.Transparent extra style={{ width: '182px', margin:'0px'}}>Cancelar</Button.Transparent>      
+                <Button.Focused extra style={{ width: '182px', margin: '0px', marginBottom: '10px'}} onClick={handleSendClick}>Enviar</Button.Focused>
+                <Button.Transparent extra style={{ width: '182px', margin:'0px'}} onClick={handleCancelClick}>Cancelar</Button.Transparent>      
             </div>
         </div>
     </div>

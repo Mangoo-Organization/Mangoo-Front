@@ -7,11 +7,10 @@ import Checkbox from "./components/CheckBox/Checkbox";
 import ProfilePhoto from "./components/ProfilePhoto/ProfilePhoto";
 import Information from "./information/page";
 import ModalContainer from "./components/Modals/ModalContainer";
-import Studentlogin from "./student-register/page";
-import TeacherLogin from "./teacher-login/page";
+import OwnerLogin from "./owner-login/page";
 
 export default function Home() {
   return (
-    <></>
+    <OwnerLogin/>
   );
 }

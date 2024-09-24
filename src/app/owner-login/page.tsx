@@ -5,12 +5,22 @@ import NavBar from '../components/NavBar/NavBar'
 import Image from 'next/image'
 import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
-import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
 import Students from '../../../public/icones/school_students.svg'
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
+import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
 
  const OwnerLogin = () => {
+
+    const router = useRouter();
+
+    const handleForgotClick = () => {
+      router.push('/forgot-password');
+    }
+
+    const handleRegisterClick = () => {
+        router.push('/information');
+      }
+
   return (
     <div>
         <NavBar/>
@@ -55,14 +65,14 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
                 <p className='subtitle__text__owner'>Senha<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Senha' style={{ width: '380px'}}/>
 
-                <p className='password__text__owner'>Esqueceu sua senha?</p>
+                <p className='password__text__owner' onClick={handleForgotClick}>Esqueceu sua senha?</p>
 
             </div>
 
             <div className="buttons__owner">
                 <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Login</Button.Focused>    
             </div>
-            <p className='footer__text__owner'>Não possui conta? Realize seu cadastro aqui</p>
+            <p className='footer__text__owner' onClick={handleRegisterClick}>Não possui conta? Realize seu cadastro aqui</p>
         </div>
     </div>
     </div>
