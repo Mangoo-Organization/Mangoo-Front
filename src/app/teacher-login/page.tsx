@@ -5,12 +5,23 @@ import NavBar from '../components/NavBar/NavBar'
 import Image from 'next/image'
 import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
-import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
 import CarouselTeacher from '../components/CarouselTeacher/carouselteacher'
+import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
 
  const TeacherLogin = () => {
+       
+    const router = useRouter();
+
+  const handleForgotClick = () => {
+    router.push('/forgot-password');
+  }
+
+  const handleRegisterClick = () => {
+    router.push('/teacher-register');
+  }
+
+
   return (
     <div>
         <NavBar/>
@@ -48,14 +59,14 @@ import CarouselTeacher from '../components/CarouselTeacher/carouselteacher'
                 <p className='subtitle__text__teacher'>Senha<span className='asterisk'>*</span></p>
                 <InputSimple extra placeholder='Senha' style={{ width: '380px'}}/>
 
-                <p className='password__text__teacher'>Esqueceu sua senha?</p>
+                <p className='password__text__teacher' onClick={handleForgotClick}>Esqueceu sua senha?</p>
 
             </div>
 
             <div className="buttons__teacher">
                 <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Login</Button.Focused>    
             </div>
-            <p className='footer__text__teacher'>Não possui conta? Realize seu cadastro aqui</p>
+            <p className='footer__text__teacher' onClick={handleRegisterClick}>Não possui conta? Realize seu cadastro aqui</p>
         </div>
     </div>
     </div>
