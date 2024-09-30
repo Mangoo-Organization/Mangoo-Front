@@ -39,14 +39,22 @@ import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da ve
           if (!response.ok) {
             throw new Error(`Erro: ${response.statusText}`);
           }
-    
+
           const data = await response.json();
-          console.log('Login bem-sucedido:');
-          // Se entrar aqui é pq deu certo e vai ser redirecionado para a página desejada
-          router.push('/owneredit')
+      
+          const token = data.token; // Capturando o token da resposta
+          const userType = data.user_type; // Capturando o tipo de usuário
+    
+          // Verificando o tipo de usuário
+          if (userType === 'O') {
+            localStorage.setItem('authToken', token); // Armazenando o token no localStorage, pode ser usado na home
+            router.push('/owneredit'); // Redirecionando para outra página após o login bem-sucedido
+          } else {
+            alert('Usuário não autorizado. Verifique seu tipo de conta.');
+          }
           
         } catch (error) {
-          console.error('Erro ao fazer login:', error);
+          alert('Erro ao fazer login.');
         }
       };
 
