@@ -1,14 +1,14 @@
-'use client'
-import Dropdown from "../components/Dropdown/Dropdown"
-import { InputSimple } from "../components/InputSimple/InputSimple"
-import NavBar from "../components/NavBar/NavBar"
-import ProfilePhoto from "../components/ProfilePhoto/ProfilePhoto"
-import SideBar from "../components/Sidebar/SideBar"
-import * as Button from '../components/Button/Button'
-import "./style.css"
-import { useEffect, useState } from "react"
-const OwnerEdit = () => {
+'use client';
+import Dropdown from "../components/Dropdown/Dropdown";
+import { InputSimple } from "../components/InputSimple/InputSimple";
+import NavBar from "../components/NavBar/NavBar";
+import ProfilePhoto from "../components/ProfilePhoto/ProfilePhoto";
+import SideBar from "../components/Sidebar/SideBar";
+import * as Button from '../components/Button/Button';
+import "./style.css";
+import { useEffect, useState } from "react";
 
+const OwnerEdit = () => {
     const [data, setData] = useState<any[]>([]);
     const [email, setEmail] = useState('');
     const [itr, setItr] = useState('');
@@ -18,7 +18,7 @@ const OwnerEdit = () => {
     const [second_name, setSecond_name] = useState('');
     const token = '7aff3ca8d54af3c11ce9fd39884cd082db1232e1';
     
-
+    // Função para buscar os dados do usuário ao carregar a página
     useEffect(() => {
         const fetchUserData = async () => {
           try {
@@ -36,14 +36,14 @@ const OwnerEdit = () => {
       
             const result = await response.json();
             console.log(result);
-            setData(result)
-            setEmail(result.email)
-            setItr(result.itr)
-            setPhone1(result.phone1)
-            setPhone2(result.phone2)
-            setFirst_name(result.first_name)
-            setSecond_name(result.second_name)
-            console.log("deu certo")
+            setData(result);
+            setEmail(result.email);
+            setItr(result.itr);
+            setPhone1(result.phone1);
+            setPhone2(result.phone2);
+            setFirst_name(result.first_name);
+            setSecond_name(result.second_name);
+            console.log("Dados carregados com sucesso");
           } catch (error) {
             console.error(error);
           }
@@ -51,7 +51,39 @@ const OwnerEdit = () => {
       
         fetchUserData();
       }, []);
-    return(
+
+    // Função para salvar as alterações
+    const handleSave = async () => {
+        try {
+            const response = await fetch('http://45.174.64.137:8000/api/v1/user/1/', {
+                method: 'PATCH',
+                headers: {
+                    'Authorization': `Token ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: email,
+                    itr: itr,
+                    phone1: phone1,
+                    phone2: phone2,
+                    first_name: first_name,
+                    second_name: second_name,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error('Erro ao salvar as alterações');
+            }
+
+            const result = await response.json();
+            console.log("Dados atualizados:", result);
+            alert("Alterações salvas com sucesso!");
+        } catch (error) {
+            console.error("Erro ao salvar os dados:", error);
+        }
+    };
+
+    return (
         <>
         <NavBar/>
         <div className="owneredit__container">
@@ -70,59 +102,67 @@ const OwnerEdit = () => {
                         <ProfilePhoto/>
                         <div className="owneredit__button-foto">
                             <Button.Green extra>Alterar foto</Button.Green>
-                            <Button.Transparent>  Remover foto</Button.Transparent>
+                            <Button.Transparent>Remover foto</Button.Transparent>
                         </div>  
                     </div>
-
                 </div>
+                
                 <div className="owneredit__dados">
                     <p className="owneredit__dados-titulo">Dados Pessoais</p>
 
                     <div className="input__data">
-                            <div className='boxes'>
-                                <p className='owneredit__text'>Nome<span className='asterisk'>*</span></p>
-                                <InputSimple 
-                                    extra 
-                                    placeholder='Fulano'
-                                    value={first_name + " "+ second_name }
-                              />
-                                
-                            </div>
-                            <div className='boxes'>
-                                <p className='owneredit__text'>Email<span className='asterisk'>*</span></p>
-                                <InputSimple  extra placeholder='fulano@gmail.com'
+                        <div className='boxes'>
+                            <p className='owneredit__text'>Nome<span className='asterisk'>*</span></p>
+                            <InputSimple 
+                                extra 
+                                placeholder='Fulano'
+                                value={first_name} //first_name + " "+ second_name 
+                                onChange={(e) => {
+                                    const names = e.target.value.split(" ");
+                                    setFirst_name(names[0] || '');
+                                    setSecond_name(names[1] || '');
+                                }}
+                            />
+                        </div>
+                        
+                        <div className='boxes'>
+                            <p className='owneredit__text'>Email<span className='asterisk'>*</span></p>
+                            <InputSimple  
+                                extra 
+                                placeholder='fulano@gmail.com'
                                 value={email}  
                                 onChange={(e) => setEmail(e.target.value)}
-                                />                            
-                            </div>
-                            
+                            />                            
+                        </div>
                     </div>
                     
                     <div className="input__data">
-                            <div className='boxes'>
-                                <p className='owneredit__text'>CPF<span className='asterisk'>*</span></p>
-                                <InputSimple  placeholder='Nome da instituição'
+                        <div className='boxes'>
+                            <p className='owneredit__text'>CPF<span className='asterisk'>*</span></p>
+                            <InputSimple  
+                                placeholder='Nome da instituição'
                                 value={itr}  
                                 onChange={(e) => setItr(e.target.value)}
-                                />
-                            </div>
-                            <div className='boxes'>
-                                <p className='owneredit__text'>Telefone 1<span className='asterisk'>*</span></p>
-                                <InputSimple
-                                    placeholder='Nome da instituição'
-                                    value={phone1}  
-                                    onChange={(e) => setPhone1(e.target.value)}
-                                />
-                            </div>
-                            <div className='boxes'>
-                                <p className='owneredit__text'>Telefone 2</p>
-                                <InputSimple  placeholder='Nome da instituição'
-                                    value={phone2}  
-                                    onChange={(e) => setPhone2(e.target.value)}
-                                    />
-                            </div>
-                           
+                            />
                         </div>
+                        <div className='boxes'>
+                            <p className='owneredit__text'>Telefone 1<span className='asterisk'>*</span></p>
+                            <InputSimple
+                                placeholder='Nome da instituição'
+                                value={phone1}  
+                                onChange={(e) => setPhone1(e.target.value)}
+                            />
+                        </div>
+                        <div className='boxes'>
+                            <p className='owneredit__text'>Telefone 2</p>
+                            <InputSimple  
+                                placeholder='Nome da instituição'
+                                value={phone2}  
+                                onChange={(e) => setPhone2(e.target.value)}
+                            />
+                        </div>
+                    </div>
+                    
                     <div className="input__data">
                         <div className="boxes">
                             <div>
@@ -132,17 +172,15 @@ const OwnerEdit = () => {
                         </div>
                     </div>
                 </div>
+                
                 <div className="owneredit__buttons">
                     <Button.Transparent>Cancelar</Button.Transparent>   
-                    <Button.Green>Salvar</Button.Green>
+                    <Button.Green onClick={handleSave}>Salvar</Button.Green>
                 </div>
-                
             </div>
-
         </div>
-       
         </>
-    )
+    );
 }
 
-export default OwnerEdit
+export default OwnerEdit;
