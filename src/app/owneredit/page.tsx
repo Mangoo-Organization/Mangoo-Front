@@ -6,7 +6,36 @@ import ProfilePhoto from "../components/ProfilePhoto/ProfilePhoto"
 import SideBar from "../components/Sidebar/SideBar"
 import * as Button from '../components/Button/Button'
 import "./style.css"
+import { useEffect, useState } from "react"
 const OwnerEdit = () => {
+    const [data, setData] = useState<any[]>([]);
+    const token = '7aff3ca8d54af3c11ce9fd39884cd082db1232e1'; 
+    useEffect(() => {
+        const fetchUserData = async () => {
+          try {
+            const response = await fetch('http://45.174.64.137:8000/api/v1/user/1/', {
+              method: 'GET',
+              headers: {
+                'Authorization': `Token ${token}`,  
+                'Content-Type': 'application/json',
+              },
+            });
+      
+            if (!response.ok) {
+              throw new Error('Erro ao buscar o usuário');
+            }
+      
+            const result = await response.json();
+            console.log(result);
+            setData(result)
+            console.log("deu certo")
+          } catch (error) {
+            console.error(error);
+          }
+        };
+      
+        fetchUserData();
+      }, []);
     return(
         <>
         <NavBar/>
@@ -37,11 +66,12 @@ const OwnerEdit = () => {
                     <div className="input__data">
                             <div className='boxes'>
                                 <p className='owneredit__text'>Nome<span className='asterisk'>*</span></p>
-                                <InputSimple extra placeholder='Fulano'/>
+                                <InputSimple extra placeholder='Fulano' value={data}></InputSimple>
+                                
                             </div>
                             <div className='boxes'>
                                 <p className='owneredit__text'>Email<span className='asterisk'>*</span></p>
-                                <InputSimple  extra placeholder='fulano@gmail.com'/>
+                                <InputSimple  extra placeholder='fulano@gmail.com'></InputSimple>
                             </div>
                             
                     </div>
@@ -49,7 +79,7 @@ const OwnerEdit = () => {
                     <div className="input__data">
                             <div className='boxes'>
                                 <p className='owneredit__text'>CPF<span className='asterisk'>*</span></p>
-                                <InputSimple  placeholder='Nome da instituição'/>
+                                <InputSimple  placeholder='Nome da instituição'></InputSimple>
                             </div>
                             <div className='boxes'>
                                 <p className='owneredit__text'>Telefone 1<span className='asterisk'>*</span></p>
