@@ -35,17 +35,19 @@ import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da ve
 
       const data = await response.json();
       
-      const token = data.token;// Capturando o token da resposta
-      console.log('Token recebido:', token);
-      
-      localStorage.setItem('authToken', token);// Armazenando o token no localStorage
+      const token = data.token; // Capturando o token da resposta
+      const userType = data.user_type; // Capturando o tipo de usuário
 
-      console.log('Login bem-sucedido');
-      
-      router.push('/teacher-home');// Redirecionando para outra página após o login bem-sucedido
+      // Verificando o tipo de usuário
+      if (userType === 'T') {
+        localStorage.setItem('authToken', token); // Armazenando o token no localStorage, usado na home
+        router.push('/teacher-home'); // Redirecionando para outra página após o login bem-sucedido
+      } else {
+        alert('Usuário não autorizado. Verifique seu tipo de conta.');
+      }
       
     } catch (error) {
-      console.error('Erro ao fazer login:', error);
+      alert('Erro ao fazer login.');
     }
   };
 
