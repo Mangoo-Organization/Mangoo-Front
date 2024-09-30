@@ -8,8 +8,17 @@ import * as Button from '../components/Button/Button'
 import "./style.css"
 import { useEffect, useState } from "react"
 const OwnerEdit = () => {
+
     const [data, setData] = useState<any[]>([]);
-    const token = '7aff3ca8d54af3c11ce9fd39884cd082db1232e1'; 
+    const [email, setEmail] = useState('');
+    const [itr, setItr] = useState('');
+    const [phone1, setPhone1] = useState('');
+    const [phone2, setPhone2] = useState('');
+    const [first_name, setFirst_name] = useState('');
+    const [second_name, setSecond_name] = useState('');
+    const token = '7aff3ca8d54af3c11ce9fd39884cd082db1232e1';
+    
+
     useEffect(() => {
         const fetchUserData = async () => {
           try {
@@ -28,6 +37,12 @@ const OwnerEdit = () => {
             const result = await response.json();
             console.log(result);
             setData(result)
+            setEmail(result.email)
+            setItr(result.itr)
+            setPhone1(result.phone1)
+            setPhone2(result.phone2)
+            setFirst_name(result.first_name)
+            setSecond_name(result.second_name)
             console.log("deu certo")
           } catch (error) {
             console.error(error);
@@ -66,12 +81,19 @@ const OwnerEdit = () => {
                     <div className="input__data">
                             <div className='boxes'>
                                 <p className='owneredit__text'>Nome<span className='asterisk'>*</span></p>
-                                <InputSimple extra placeholder='Fulano' value={data}></InputSimple>
+                                <InputSimple 
+                                    extra 
+                                    placeholder='Fulano'
+                                    value={first_name + " "+ second_name }
+                              />
                                 
                             </div>
                             <div className='boxes'>
                                 <p className='owneredit__text'>Email<span className='asterisk'>*</span></p>
-                                <InputSimple  extra placeholder='fulano@gmail.com'></InputSimple>
+                                <InputSimple  extra placeholder='fulano@gmail.com'
+                                value={email}  
+                                onChange={(e) => setEmail(e.target.value)}
+                                />                            
                             </div>
                             
                     </div>
@@ -79,15 +101,25 @@ const OwnerEdit = () => {
                     <div className="input__data">
                             <div className='boxes'>
                                 <p className='owneredit__text'>CPF<span className='asterisk'>*</span></p>
-                                <InputSimple  placeholder='Nome da instituição'></InputSimple>
+                                <InputSimple  placeholder='Nome da instituição'
+                                value={itr}  
+                                onChange={(e) => setItr(e.target.value)}
+                                />
                             </div>
                             <div className='boxes'>
                                 <p className='owneredit__text'>Telefone 1<span className='asterisk'>*</span></p>
-                                <InputSimple  placeholder='Nome da instituição'/>
+                                <InputSimple
+                                    placeholder='Nome da instituição'
+                                    value={phone1}  
+                                    onChange={(e) => setPhone1(e.target.value)}
+                                />
                             </div>
                             <div className='boxes'>
                                 <p className='owneredit__text'>Telefone 2</p>
-                                <InputSimple  placeholder='Nome da instituição'/>
+                                <InputSimple  placeholder='Nome da instituição'
+                                    value={phone2}  
+                                    onChange={(e) => setPhone2(e.target.value)}
+                                    />
                             </div>
                            
                         </div>
