@@ -23,3 +23,7 @@ export interface SidebarProps{
     text2:string,
     text3:string,
 }
+
+export interface NavBarProps{
+    isLogIn?: boolean
+}

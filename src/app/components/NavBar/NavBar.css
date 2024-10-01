@@ -8,8 +8,24 @@
 }
 
 .menu__left{
-    margin-left: 15px;
+    margin-left: 1.5em;
+    display: flex;
+    align-items: center;
 }
+
+.tag__menu-container{
+    margin: 0 1em;
+}
+
+.tag__menu{
+    font-family: var(--nunito);
+    color: var(--brunswick-green);
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0.5em;
+    text-decoration: none;
+}
+
 .menu__right{
     margin-right: 15px;
 }
