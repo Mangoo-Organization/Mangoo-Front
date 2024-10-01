@@ -13,7 +13,7 @@ const page = () => {
    <div className="instituedit__container">
         <div className="instituedit__sidebar">
             {/* passar os texts de acordo com qual texto você quer sublinhar */}
-            <SideBar text1='sidebar__text' text2='sidebar__textsub' text3='sidebar__text'/>
+            <SideBar minhaConta='sidebar__text' instituicao='sidebar__textsub' token='sidebar__text'/>
         </div>
             <div className="instituedit__card">
                 <div className="instituedit__info">

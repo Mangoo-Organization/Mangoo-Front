@@ -1,16 +1,63 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import NavBar from '../components/NavBar/NavBar'
 import Image from 'next/image'
 import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
-import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
 import Students from '../../../public/icones/school_students.svg'
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
+import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
 
  const OwnerLogin = () => {
+
+    const [email, setEmail] = useState('');  
+    const [password, setPassword] = useState(''); 
+    const router = useRouter();
+
+    const handleForgotClick = () => {
+      router.push('/forgot-password');
+    }
+
+    const handleRegisterClick = () => {
+        router.push('/information');
+      }
+
+      const handleLogin = async () => {
+        try {
+          const response = await fetch('http://45.174.64.137:8000/api/v1/auth-token/', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              username: email, 
+              password: password,
+            }),
+          });
+    
+          if (!response.ok) {
+            throw new Error(`Erro: ${response.statusText}`);
+          }
+
+          const data = await response.json();
+      
+          const token = data.token; // Capturando o token da resposta
+          const userType = data.user_type; // Capturando o tipo de usuário
+    
+          // Verificando o tipo de usuário
+          if (userType === 'O') {
+            localStorage.setItem('authToken', token); // Armazenando o token no localStorage, pode ser usado na home
+            router.push('/owneredit'); // Redirecionando para outra página após o login bem-sucedido
+          } else {
+            alert('Usuário não autorizado. Verifique seu tipo de conta.');
+          }
+          
+        } catch (error) {
+          alert('Erro ao fazer login.');
+        }
+      };
+
   return (
     <div>
         <NavBar/>
@@ -50,19 +97,31 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             <div className="container__inputs__owner">
                 
                 <p className='subtitle__text__owner'>E-mail<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Email Ex: proprietario@instituição.com' style={{ width: '380px'}}/>
+                <InputSimple 
+                    extra 
+                    placeholder='Email Ex: proprietario@instituição.com' 
+                    style={{ width: '380px'}}
+                    value={email}  
+                    onChange={(e) => setEmail(e.target.value)} />
 
                 <p className='subtitle__text__owner'>Senha<span className='asterisk'>*</span></p>
-                <InputSimple extra placeholder='Senha' style={{ width: '380px'}}/>
+                <InputSimple
+                    type='password' 
+                    extra 
+                    placeholder='Senha' 
+                    style={{ width: '380px'}}
+                    value={password}  // Define o valor do input para o estado da senha
+                    onChange={(e) => setPassword(e.target.value)}  // Atualiza o estado ao digitar
+                    />
 
-                <p className='password__text__owner'>Esqueceu sua senha?</p>
+                <p className='password__text__owner' onClick={handleForgotClick}>Esqueceu sua senha?</p>
 
             </div>
 
             <div className="buttons__owner">
-                <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Login</Button.Focused>    
+                <Button.Focused extra style={{ width: '350px', margin:'0px'}}  onClick={handleLogin}>Login</Button.Focused>    
             </div>
-            <p className='footer__text__owner'>Não possui conta? Realize seu cadastro aqui</p>
+            <p className='footer__text__owner' onClick={handleRegisterClick}>Não possui conta? Realize seu cadastro aqui</p>
         </div>
     </div>
     </div>

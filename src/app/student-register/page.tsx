@@ -7,9 +7,17 @@ import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
 import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
+import CarouselStudent from '../components/CarouselStudent/carouselstudent'
+import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
 
  const StudentRegister = () => {
+
+    const router = useRouter();
+
+    const handleStudentClick = () => {
+      router.push('/student-login');
+    }
+
   return (
     <div>
         <NavBar/>
@@ -17,7 +25,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
     <div className='page__studentregister'>
 
         <div className='intro__studentregister'>
-            <p>ESPAÇO PARA O CARROSSEL</p>
+            <CarouselStudent/>
         </div>
 
         <div className='space__studentregister'>
@@ -64,7 +72,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             <div className="buttons__studentregister">
                 <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Criar conta</Button.Focused>    
             </div>
-            <p className='footer__text__studentregister'>Já possui uma conta? Clique aqui</p>
+            <p className='footer__text__studentregister' onClick={handleStudentClick}>Já possui uma conta? Clique aqui</p>
         </div>
     </div>
     </div>

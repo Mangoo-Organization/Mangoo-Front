@@ -1,0 +1,68 @@
+/* Container principal do carrossel */
+.carousel-container {
+  display: flex;
+  flex-direction: line;
+  position: relative;
+  align-items: center;
+  width: 731px;
+  height: 762px;
+}
+
+/* Container das imagens do carrossel */
+.carousel-images {
+  position: relative;
+  width: 545px;
+  height: 762px;
+  margin: auto;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-position: center;
+  transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+  opacity: 0; /* Imagem invisível por padrão */
+}
+
+/* Imagem ativa (visível) */
+.carousel-image.active {
+  opacity: 1;
+}
+
+/* Botões de navegação (avançar e voltar) */
+.arrow_carousel_left{
+  position: absolute;
+  cursor: pointer;
+}
+
+.arrow_carousel_right{
+  position: absolute;
+  left: 92.6%;
+  cursor: pointer;
+}
+
+/* Estilização da label dos botões */
+.radio-label {
+  position: absolute;
+  margin-top: 95%;
+  left: 45%;
+  align-items: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.radio-label input[type="radio"] {
+  appearance: none; /* Esconde o botão de rádio padrão */
+  width: 15px;
+  height: 15px;
+  background-color: var(--aquamarine);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.radio-label input[type="radio"]:checked {
+  background-color: var(--caribbean-current);
+}

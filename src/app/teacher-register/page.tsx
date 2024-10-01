@@ -7,9 +7,17 @@ import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
 import Dropdown from "../components/Dropdown/Dropdown";
 import MangooIcon from '../../../public/icones/mangoo-icon.svg'
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
+import CarouselTeacher from '../components/CarouselTeacher/carouselteacher'
+import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
 
  const TeacherRegister = () => {
+    
+    const router = useRouter();
+
+    const handleTeacherClick = () => {
+      router.push('/teacher-login');
+    }
+
   return (
     <div>
         <NavBar/>
@@ -17,7 +25,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
     <div className='page__teacherregister'>
 
         <div className='intro__teacherregister'>
-            <p>ESPAÇO PARA O CARROSSEL</p>
+        <CarouselTeacher/>
         </div>
 
         <div className='space__teacherregister'>
@@ -64,7 +72,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
             <div className="buttons__teacherregister">
                 <Button.Focused extra style={{ width: '350px', margin:'0px'}}>Criar conta</Button.Focused>    
             </div>
-            <p className='footer__text__teacherregister'>Já possui uma conta? Clique aqui</p>
+            <p className='footer__text__teacherregister' onClick={handleTeacherClick}>Já possui uma conta? Clique aqui</p>
         </div>
     </div>
     </div>

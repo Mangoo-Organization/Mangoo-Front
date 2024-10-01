@@ -3,13 +3,18 @@ import React from 'react'
 import './style.css'
 import NavBar from '../components/NavBar/NavBar'
 import Image from 'next/image'
-import { InputSimple } from '../components/InputSimple/InputSimple'
 import * as Button from '../components/Button/Button'
-import Dropdown from "../components/Dropdown/Dropdown";
 import Pana from '../../../public/icones/forgot_password_pana.svg' 
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
+import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
 
  const ForgotPasswordConfirm = () => {
+        
+    const router = useRouter();
+
+    const handleBackClick = () => {
+      router.push('/choosen-profile');
+    }
+
   return (
     <div>
         <NavBar/>
@@ -40,7 +45,7 @@ import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin'
                 <p className='text__container__forgotconfirm'>Verifique seu email para redefinir sua senha. Caso não tenha chegado verifique a caixa de Spam.</p>
                 
                 <div className='button__forgotconfirm'>
-                <Button.Transparent extra style={{ width: '182px', margin:'0px'}}>Voltar</Button.Transparent>
+                <Button.Transparent extra style={{ width: '182px', margin:'0px'}}  onClick={handleBackClick}>Voltar</Button.Transparent>
                 </div>
             </div>
 

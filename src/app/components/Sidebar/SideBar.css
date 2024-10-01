@@ -47,5 +47,12 @@
     font-size: 20px;
     font-family: var(--poppins);
     font-weight: 400;
+}
 
+.sidebar__textsub:hover{
+    cursor: pointer;
+}
+
+.sidebar__text:hover{
+    cursor: pointer;
 }
