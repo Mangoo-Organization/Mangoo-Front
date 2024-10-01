@@ -1,0 +1,64 @@
+.teacher__mission__container{
+    margin-top: 20px;
+    margin-left: 365px;
+    width: 1534px;
+    height: 895px;
+    border-radius: 24px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 90px;
+    padding-top: 45px;
+}
+
+.teacher__mission__title{
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.teacher__mission__line{
+    width: 1089.074px;
+    height: 1.2px;
+    background-color: var(--safity-orange);
+    margin-bottom: 20px;
+}
+
+.teacher__mission__text{
+    color: var(--french-gray);
+    font-family: var(--nunito);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.type__missions__container{
+    display: flex;
+    flex-direction: line;
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    height: 185px;
+}
+
+.type__missions{
+    width: 183.306px;
+    height: 184.796px;
+    border-radius: 24px;
+    background-color: var(--french-gray);
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.teachermission__tablecontainer{
+    margin-top: 15px;
+    width: 1191px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
