@@ -18,6 +18,8 @@ const SidebarTeacher = () => {
         // Mapeia a rota para a div correspondente
         if (pathname === '/teacher-account') {
             setActiveDiv('minhaConta');
+        } else if (pathname === '/teacher-mission') {
+            setActiveDiv('missoes');
         } else if (pathname === '/teacher-mission-create') {
             setActiveDiv('missoes');
         } else if (pathname === '/teacher-classes') {
@@ -53,7 +55,7 @@ const SidebarTeacher = () => {
 
                 <div
                     className={`menu__teacher__containerline ${activeDiv === 'missoes' ? 'active' : ''}`}
-                    onClick={() => handleDivClick('missoes', '/teacher-mission-create')}
+                    onClick={() => handleDivClick('missoes', '/teacher-mission')}
                 >
                     <div className='menu__teacher__containericon'>
                         <Image src={MissionIconWhite} alt='profile icon white' className='icons__menuteacher' />

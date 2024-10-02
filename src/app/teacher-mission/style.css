@@ -36,3 +36,29 @@
     margin: 0;
 }
 
+.type__missions__container{
+    display: flex;
+    flex-direction: line;
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    height: 185px;
+}
+
+.type__missions{
+    width: 183.306px;
+    height: 184.796px;
+    border-radius: 24px;
+    background-color: var(--french-gray);
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.teachermission__tablecontainer{
+    margin-top: 15px;
+    width: 1191px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
