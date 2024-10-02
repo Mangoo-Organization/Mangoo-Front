@@ -1,0 +1,72 @@
+.menu__teacher{
+    position: absolute;
+    width: 347px;
+    height: 100%;
+    background-color: var(--jungle-green);
+}
+
+.menu__teacher__logocontainer{
+    position: absolute;
+    margin-top: 11px;
+    display: flex;
+    width: 347px;
+    justify-content: center;
+}
+
+.menu__teacher__container{
+    margin: auto;
+    margin-top: 136px;
+    width: 251px;
+}
+
+.menu__teachercontainer__logout{
+    margin: auto;
+    margin-top: 596px;
+    width: 251px;
+}
+
+.menu__teacher__containerline{
+    display: flex;
+    align-items: center;
+    width: 251px;
+    height: 44px;
+    margin: 0;
+    margin-bottom: 23px;
+    border-radius: 8px;
+    border: 1.5px solid white;
+    cursor: pointer;
+}
+
+.menu__teacher__containerline:hover{
+    background-color: var(--zomp);
+}
+
+.menu__teacher__containericon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 54px;
+    margin: 0;
+}
+
+.menu__teacher__text{
+    margin: 0;
+    font-family: var(--poppins);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    width: 251px;
+}
+
+.icons__menuteacher{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-left: 12px;
+}
+
+.menu__teacher__containerline.active {
+    background-color: var(--safity-orange); /* Adicione a cor desejada para a div ativa */
+  }

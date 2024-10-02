@@ -1,0 +1,38 @@
+.teacher__mission__container{
+    margin-top: 20px;
+    margin-left: 365px;
+    width: 1534px;
+    height: 895px;
+    border-radius: 24px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 90px;
+    padding-top: 45px;
+}
+
+.teacher__mission__title{
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.teacher__mission__line{
+    width: 1089.074px;
+    height: 1.2px;
+    background-color: var(--safity-orange);
+    margin-bottom: 20px;
+}
+
+.teacher__mission__text{
+    color: var(--french-gray);
+    font-family: var(--nunito);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
