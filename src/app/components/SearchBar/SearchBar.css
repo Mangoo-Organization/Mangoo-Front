@@ -11,8 +11,7 @@
     font-size: 16px;
     font-weight: 400;
     font-family: var(--nunito);
-    
-
+    border: 1.2px solid var(--french-gray);
 }
 
  .searchbar__magnifying-container{
@@ -23,4 +22,5 @@
     border-radius: 0px 8px 8px 0px;
     width: 60px;
     height: 40px;
+    cursor: pointer;
  }
