@@ -19,12 +19,62 @@
     margin: 0;
 }
 
+.teacher__mission__subtitle{
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
 .teacher__mission__line{
     width: 1089.074px;
     height: 1.2px;
     background-color: var(--safity-orange);
-    margin-bottom: 20px;
+    
 }
+
+.mission__dados{
+
+}
+.mission__dados__titulo{
+    border-bottom: 1px solid var(--french-gray);
+    font-size: 20px;
+    color: var(--french-gray);
+    font-family: var(--poppins);
+    width: 50%;
+
+}
+
+.input__data{
+    display: flex;
+}
+.boxes{
+    margin-right: 15px;
+}
+
+.mission__dados__text{
+    font-family: var(--nunito);
+    font-weight: 400;
+    font-size: 18px;
+    /* cor diferente das telas anteriores */
+    color: var(--brunswick-green);
+}
+.mission__dados__text__checkbox{
+    font-family: var(--nunito);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--brunswick-green);
+}
+
+.mission__dados__checkbox{
+    display: flex;
+}
+
+
+
 
 .teacher__mission__text{
     color: var(--french-gray);
