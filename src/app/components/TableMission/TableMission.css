@@ -1,17 +1,21 @@
 .datatable__mission {
     width: 100%;
-    border-collapse: collapse;
-    border: 2px solid #B9B7BE;
-    border-radius: 10px; /* Altere o valor para ajustar o arredondamento */
+    border-collapse: separate; /* Permitir bordas arredondadas */
+    border-spacing: 0; /* Remove os espaços entre as células */
+    border: 2px solid #B9B7BE; /* Borda externa da tabela */
+    border-top-left-radius: 10px; /* Cantos arredondados */
+    border-top-right-radius: 10px; /* Cantos arredondados */
 }
 
 .datatable__mission th,
 .datatable__mission td {
-    padding: 8px;
+    padding: 10px;
     text-align: left;
 }
 
-.datatable__mission th {
+.datatable__mission th { 
+    height: 45px;
+    padding: 0px;
     background-color: var(--jungle-green);
     font-family: var(--nunito);
     color: var(--Baby-Powder, #FFFFFA);
@@ -22,41 +26,92 @@
     line-height: normal;
 }
 
-.datatable__mission tr{
+.datatable__mission tr{ /*itens*/
     color: #000;
     font-family: var(--nunito);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    border-bottom: 2px solid #B9B7BE;
+    transition: 0.25s;
+}
+
+.datatable__mission th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.datatable__mission th:last-child {
+    border-top-right-radius: 10px;
 }
 
 .datatable__mission tr:nth-child(even) {
-    background-color: #f1f1f1;
+    background-color: #f5f5f5;
 }
 
 .datatable__mission tr:hover {
-    background-color: #ece1d3;
+    transition: 0.25s;
+    background-color: #f7ece3;
 }
+/*PAGINATION-------------------------*/
 
 .pagination {
     display: flex;
+    align-items: center;
+    height: 45px;
     justify-content: center;
-    background-color: var(--jungle-green);
+    border: 2px solid #B9B7BE;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
 }
 
 .pagination button {
-    margin: 0 5px;
-    padding: 5px 10px;
+    width: 80px;
+    height: 30px;
     background-color: var(--jungle-green);
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+    font-family: var(--nunito);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .pagination button:disabled {
-    background-color: #ccc; /* Cor para o botão desabilitado */
+    background-color: #cccccc; /* Cor para o botão desabilitado */
     cursor: not-allowed;
+}
+
+.pagination_text{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 45px;
+    font-family: var(--nunito);
+    color: var(--brunswick-green);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*ICONS-------------------------*/
+
+.action_icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: line;
+}
+
+.icon_container_table{
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
 }

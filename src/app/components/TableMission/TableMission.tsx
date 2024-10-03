@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './TableMission.css'; // Importe o arquivo CSS
+import Image from 'next/image';
+import EditIconTable from '../../../../public/icones/edit_icon_table.svg'
+import DeleteIconTable from '../../../../public/icones/delete_icon_table.svg'
+import ChecklistIconTable from '../../../../public/icones/checklist_icon_table.svg'
 
 interface TableProps {
   data: {
@@ -7,9 +11,8 @@ interface TableProps {
     class: string;
     duration: string;
     checklist: string;
-    actions: string;
     status: string;
-  }[];
+  }[]; // Remover 'actions' do tipo de dado
 }
 
 const PAGE_SIZE = 5; // Defina o número de itens por página
@@ -56,8 +59,38 @@ const TableMission: React.FC<TableProps> = ({ data }) => {
               <td>{item.title}</td>
               <td>{item.class}</td>
               <td>{item.duration}</td>
-              <td>{item.checklist}</td>
-              <td>{item.actions}</td>
+              <td>
+              <div className='action_icons'>
+                  <div className='icon_container_table'>
+                    <Image
+                      src={ChecklistIconTable}
+                      alt='checklist icon table'
+                      width={20}
+                      height={20}
+                    />
+                  </div>
+              </div>
+              </td>
+              <td>
+                <div className='action_icons'>
+                  <div className='icon_container_table'>
+                    <Image
+                      src={EditIconTable}
+                      alt='edit icon table'
+                      width={20}
+                      height={20}
+                    />
+                  </div>
+                  <div className='icon_container_table'>
+                    <Image
+                      src={DeleteIconTable}
+                      alt='edit icon table'
+                      width={20}
+                      height={20}
+                    />
+                  </div>
+                </div>
+              </td>
               <td>{item.status}</td>
             </tr>
           ))}
@@ -69,9 +102,9 @@ const TableMission: React.FC<TableProps> = ({ data }) => {
         <button onClick={handlePreviousPage} disabled={currentPage === 1}>
           Anterior
         </button>
-        <span>
+        <p className='pagination_text'>
           Página {currentPage} de {totalPages}
-        </span>
+        </p>
         <button onClick={handleNextPage} disabled={currentPage === totalPages}>
           Próxima
         </button>

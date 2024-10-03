@@ -3,8 +3,6 @@ import React from 'react'
 import './style.css'
 import NavBar from '../components/NavBar/NavBar'
 import SidebarTeacher from '../components/SidebarTeacher/SidebarTeacher'
-import { InputSimple } from '../components/InputSimple/InputSimple'
-import * as Button from '../components/Button/Button';
 import TableMission from '../components/TableMission/TableMission'
 import Image from 'next/image'
 import MissionCuston from '../../../public/icones/mission_custon.svg'
@@ -32,6 +30,46 @@ const tableData = [
       status: 'Inativo',
     },
     {
+        title: 'Curso de TypeScript',
+        class: 'Turma C',
+        duration: '6 semanas',
+        checklist: 'Não',
+        actions: 'Editar',
+        status: 'Inativo',
+      },
+      {
+        title: 'Curso de TypeScript',
+        class: 'Turma C',
+        duration: '6 semanas',
+        checklist: 'Não',
+        actions: 'Editar',
+        status: 'Inativo',
+      },
+      {
+        title: 'Curso de TypeScript',
+        class: 'Turma C',
+        duration: '6 semanas',
+        checklist: 'Não',
+        actions: 'Editar',
+        status: 'Inativo',
+      },
+      {
+        title: 'Curso de TypeScript',
+        class: 'Turma C',
+        duration: '6 semanas',
+        checklist: 'Não',
+        actions: 'Editar',
+        status: 'Inativo',
+      },
+      {
+        title: 'Curso de TypeScript',
+        class: 'Turma C',
+        duration: '6 semanas',
+        checklist: 'Não',
+        actions: 'Editar',
+        status: 'Inativo',
+      },
+      {
         title: 'Curso de TypeScript',
         class: 'Turma C',
         duration: '6 semanas',

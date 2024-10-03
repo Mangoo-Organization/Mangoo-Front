@@ -12,8 +12,6 @@ import DifficultyButton from "./components/DifficultyButton/DifficultyButton";
 
 export default function Home() {
   return (
-    <div className="sla">
-      <DifficultyButton/>
-    </div>
+    <TeacherMission/>
   );
 }
