@@ -15,7 +15,10 @@ export interface DropdownProps{
 }
 
 export interface CheckboxProps{
-    content:string
+    content?: string,
+    checked?: boolean;     
+    onChange?: () => void;
+    
 }
 
 export interface SidebarProps{
