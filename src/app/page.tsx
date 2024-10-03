@@ -8,9 +8,12 @@ import ProfilePhoto from "./components/ProfilePhoto/ProfilePhoto";
 import Information from "./information/page";
 import ModalContainer from "./components/Modals/ModalContainer";
 import SidebarTeacher from "./components/SidebarTeacher/SidebarTeacher";
+import DifficultyButton from "./components/DifficultyButton/DifficultyButton";
 
 export default function Home() {
   return (
-    <SidebarTeacher/>
+    <div className="sla">
+      <DifficultyButton/>
+    </div>
   );
 }

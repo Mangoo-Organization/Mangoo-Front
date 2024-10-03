@@ -5,7 +5,7 @@ const Button = style.button<{extra?: boolean}>`
   margin: 0.5em;
   font-weight: 700;
   border-radius: 8px;
-  border: none;
+  border: 1px solid transparent;
   padding: 10px 0;
   color: var(--baby-powder);
   transition: 0.4s;

@@ -1,0 +1,90 @@
+.button__box{
+    width: 387px;
+    margin: 1em;
+    display: flex;
+}
+
+.easy__button, .mediun__button, .hard__button{
+    border: none;
+    background-color: transparent;
+    width: 129px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.easy__button, .mediun__button{
+    border-right: 1px solid var(--french-gray);
+}
+
+.easy__button{
+    border-top-left-radius: 8px;
+    border-end-start-radius: 8px;
+    border-bottom: 1px solid var(--french-gray);
+    border-top: 1px solid var(--french-gray);
+    border-left: 1px solid var(--french-gray);
+}
+
+.hard__button{
+    border-start-end-radius: 8px;
+    border-end-end-radius: 8px;
+    border-bottom: 1px solid var(--french-gray);
+    border-top: 1px solid var(--french-gray);
+    border-right: 1px solid var(--french-gray);
+}
+
+.mediun__button{
+    border-bottom: 1px solid var(--french-gray);
+    border-top: 1px solid var(--french-gray);
+}
+
+.box__text{
+    font-family: var(--nunito);
+    font-weight: 400;
+    margin: 0.5em;
+    color: var(--french-gray);
+}
+
+.easy__buttonActive, .mediun__buttonActive, .hard__buttonActive{
+    border: none;
+    background-color: transparent;
+    width: 129px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.easy__buttonActive{
+    background-color: var(--caribbean-current);
+    border: 1px solid var(--caribbean-current);
+    border-top-left-radius: 8px;
+    border-end-start-radius: 8px;
+    span{
+        color: var(--anti-flash-white);
+    }
+}
+
+.mediun__buttonActive{
+    border-bottom: 1px solid var(--caribbean-current);
+    border-top: 1px solid var(--caribbean-current);
+    background-color: var(--caribbean-current);
+    span{
+        color: var(--anti-flash-white);
+    }
+}
+
+.hard__buttonActive{
+    border-start-end-radius: 8px;
+    border-end-end-radius: 8px;
+    border-bottom: 1px solid var(--caribbean-current);
+    border-top: 1px solid var(--caribbean-current);
+    border-right: 1px solid var(--caribbean-current);
+    background-color: var(--caribbean-current);
+    span{
+        color: var(--anti-flash-white);
+    }
+}
