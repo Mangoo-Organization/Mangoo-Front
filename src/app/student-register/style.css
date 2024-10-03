@@ -82,3 +82,9 @@
     color: var(--safity-orange);
     font-size: 18px;
 }
+
+.footer__text__studentregister:hover{
+    text-decoration: underline;
+    color: var(--caribbean-current);
+
+}
