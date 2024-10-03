@@ -54,6 +54,7 @@ const tableData = [
     <div>
         <SidebarTeacher/>
         <NavBar isLogIn />
+        
         <div className='teacher__mission__container'>
             
             <p className='teacher__mission__title'>Missões modelo</p>
@@ -79,28 +80,28 @@ const tableData = [
                 <div className='type__mission__class' onClick={handleMissionCreateClick}>
                   <div className='type__mission__title__container'>
                     <p className='type__mission__title'>Missões em sala</p>
-                    </div>
-                    <div className='type__misson__images'>
-                      <Image
-                        src={MissionClass}
-                        alt='mission class'
-                        width={159}
-                        height={93}
-                      />
+                  </div>
+                  <div className='type__misson__images'>
+                    <Image
+                      src={MissionClass}
+                      alt='mission class'
+                      width={159}
+                      height={93}
+                    />
                   </div>
                 </div>
 
                 <div className='type__mission__inhome' onClick={handleMissionCreateClick}>
                   <div className='type__mission__title__container'>
                     <p className='type__mission__title'>Missões em casa</p>
-                    </div>
-                    <div className='type__misson__images'>
-                      <Image
-                        src={MissionInHome}
-                        alt='mission in home'
-                        width={133}
-                        height={115}
-                      />
+                  </div>
+                  <div className='type__misson__images'>
+                    <Image
+                      src={MissionInHome}
+                      alt='mission in home'
+                      width={133}
+                      height={115}
+                    />
                   </div>
                 </div>
 

@@ -3,14 +3,15 @@
 }
 
 .searchbar__input{
-    padding-left: 1em;
-    width: 342px;
-    border: 0 none;
-    outline: 0;
-    border-radius: 8px 0 0 8px;
-    font-size: 16px;
-    font-weight: 400;
+    display: flex;
+    height: 2.438rem;
+    width: 21.875rem;   
+    padding: 5px 10px;
     font-family: var(--nunito);
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
     border: 1.2px solid var(--french-gray);
 }
 
@@ -21,6 +22,6 @@
     align-items: center;
     border-radius: 0px 8px 8px 0px;
     width: 60px;
-    height: 40px;
+    height: 100%px;
     cursor: pointer;
  }
