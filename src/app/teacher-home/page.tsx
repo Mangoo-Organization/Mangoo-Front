@@ -1,12 +1,17 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import * as Button from '../components/Button/Button'
+import SidebarTeacher from '../components/SidebarTeacher/SidebarTeacher';
+import NavBar from '../components/NavBar/NavBar';
+import './style.css'
 
 const TeacherHome = () => {
   const [userData, setUserData] = useState(null);
   const router = useRouter();
 
   useEffect(() => {
+
     const fetchData = async () => {
       const token = localStorage.getItem('authToken');
 
@@ -44,27 +49,35 @@ const TeacherHome = () => {
 
   return (
     <div>
-      <h1>Bem-vindo à página inicial do professor</h1>
-      
-      {userData ? (
-        <div>
-          <p>ID: {userData.id}</p>
-          <p>Email: {userData.email}</p>
-          <p>Nome: {userData.first_name} {userData.last_name}</p>
-          <p>Instituição: {userData.institution_name}</p>
+      <SidebarTeacher/>
+      <NavBar isLogIn />
+        
+      <div className='teacher__mission__container'>
+        <p className='teacher__mission__title'>Bem-vindo professor</p>
+        <div className="teacher__mission__line"></div>
+        <p className='teacher__mission__text'>Seus dados:</p>
 
-          <p>Carteira ID: {userData.wallet[0]?.id}</p>
-          <p>Saldo: {userData.wallet[0]?.balance}</p>
-          <p>Token da Carteira: {userData.wallet[0]?.token}</p>
-          
-          <p>Telefone 1: {userData.phone1}</p>
-          <p>Telefone 2: {userData.phone2}</p>
-          <p>ITR: {userData.itr}</p>
-          <p>Foto de Perfil: {userData.profile_picture}</p>
-        </div>
-      ) : (
-        <p>Carregando dados...</p>
-      )}
+          {userData ? (
+          <div>
+            <p>ID: {userData.id}</p>
+            <p>Email: {userData.email}</p>
+            <p>Nome: {userData.first_name} {userData.last_name}</p>
+            <p>Instituição: {userData.institution_name}</p>
+
+            <p>Carteira ID: {userData.wallet[0]?.id}</p>
+            <p>Saldo: {userData.wallet[0]?.balance}</p>
+            <p>Token da Carteira: {userData.wallet[0]?.token}</p>
+            
+            <p>Telefone 1: {userData.phone1}</p>
+            <p>Telefone 2: {userData.phone2}</p>
+            <p>ITR: {userData.itr}</p>
+            <p>Foto de Perfil: {userData.profile_picture}</p>
+          </div>
+        ) : (
+          <p>Carregando dados...</p>
+        )}
+
+      </div>
     </div>
   );
 };

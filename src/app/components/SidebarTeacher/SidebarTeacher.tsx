@@ -16,7 +16,7 @@ const SidebarTeacher = () => {
 
     useEffect(() => {
         // Mapeia a rota para a div correspondente
-        if (pathname === '/teacher-account') {
+        if (pathname === '/teacher-home') {
             setActiveDiv('minhaConta');
         } else if (pathname === '/teacher-mission') {
             setActiveDiv('missoes');
@@ -45,7 +45,7 @@ const SidebarTeacher = () => {
             <div className='menu__teacher__container'>
                 <div
                     className={`menu__teacher__containerline ${activeDiv === 'minhaConta' ? 'active' : ''}`}
-                    onClick={() => handleDivClick('minhaConta', '/teacher-account')}
+                    onClick={() => handleDivClick('minhaConta', '/teacher-home')}
                 >
                     <div className='menu__teacher__containericon'>
                         <Image src={ProfileIconWhite} alt='profile icon white' className='icons__menuteacher' />
