@@ -20,7 +20,7 @@ const NavBar = ({isLogIn}: NavBarProps) => {
   
         if (!token) {
           // Caso o token não exista, redirecione para a página de login
-          router.push('/choosen-profile');
+          // router.push('/choosen-profile');
           return;
         }
   

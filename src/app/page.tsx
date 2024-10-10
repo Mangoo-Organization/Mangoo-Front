@@ -9,9 +9,10 @@ import ModalContainer from "./components/Modals/ModalContainer";
 import TeacherMission from "./teacher-mission/page";
 import SidebarTeacher from "./components/SidebarTeacher/SidebarTeacher";
 import DifficultyButton from "./components/DifficultyButton/DifficultyButton";
+import ChoosenProfile from "./choosen-profile/page";
 
 export default function Home() {
   return (
-    <TeacherMission/>
+    <ChoosenProfile/>
   );
 }
