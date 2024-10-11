@@ -14,13 +14,15 @@ const NavBar = ({isLogIn}: NavBarProps) => {
     const [userData, setUserData] = useState(null);
     const router = useRouter();
 
+    function GoToLogIn(){
+        router.push('/choosen-profile');
+    }
+
     useEffect(() => {
       const fetchData = async () => {
         const token = localStorage.getItem('authToken');
   
         if (!token) {
-          // Caso o token não exista, redirecione para a página de login
-          // router.push('/choosen-profile');
           return;
         }
   
@@ -87,7 +89,7 @@ const NavBar = ({isLogIn}: NavBarProps) => {
                     </div>
                 </div>
                 <div className="menu__right">
-                    <Transparent>Log-in</Transparent>
+                    <Transparent onClick={GoToLogIn}>Log-in</Transparent>
                     <DarkGreen>Cadastre-se</DarkGreen>
                 </div>
             </header>
