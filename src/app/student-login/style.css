@@ -89,6 +89,10 @@
     cursor: pointer;
 }
 
+.footer__text__student:hover, .password__text__student:hover{
+    color: var(--caribbean-current);
+}
+
 .asterisk{
     color: var(--safity-orange);
     font-size: 18px;
