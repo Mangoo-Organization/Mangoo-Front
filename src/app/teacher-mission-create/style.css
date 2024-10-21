@@ -1,12 +1,14 @@
 .teacher__mission__container{
     margin-top: 20px;
     margin-left: 365px;
-    width: 1534px;
-    height: 895px;
+    margin-bottom: 20px;
+    width: 95.875rem;
+    
     border-radius: 24px;
     background-color: rgb(255, 255, 255);
     padding-left: 90px;
     padding-top: 45px;
+    padding-bottom: 45px
 }
 
 .teacher__mission__title{
@@ -26,7 +28,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .teacher__mission__line{
@@ -36,9 +38,6 @@
     
 }
 
-.mission__dados{
-
-}
 .mission__dados__titulo{
     border-bottom: 1px solid var(--french-gray);
     font-size: 20px;
@@ -61,6 +60,8 @@
     font-size: 18px;
     /* cor diferente das telas anteriores */
     color: var(--brunswick-green);
+    margin-top:18px;
+    margin-bottom:18px;
 }
 .mission__dados__text__checkbox{
     font-family: var(--nunito);
@@ -73,16 +74,16 @@
     display: flex;
 }
 
-
-
-
-.teacher__mission__text{
-    color: var(--french-gray);
-    font-family: var(--nunito);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
+.mission__text__area{
+    width: 968px;
+    height: 158;
+    border-radius: 8px;
 }
 
+.mission__buttons{
+    display: flex;
+    justify-content: space-between;
+    align-self: self-end;
+    margin-top: 50px;
+    width: 95%;
+}

@@ -8,8 +8,9 @@ import * as Button from '../components/Button/Button';
 import TableMission from '../components/TableMission/TableMission'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da versão
-import { InputDate } from '../components/InputDate/InputDate'
+import { Input } from '../components/Input/Input'
 import Checkbox from '../components/CheckBox/Checkbox'
+import DifficultButton from '../components/DifficultyButton/DifficultyButton'
 
  const TeacherMissionCreate = () => {
 
@@ -52,24 +53,21 @@ import Checkbox from '../components/CheckBox/Checkbox'
                         
                         <div className='boxes'>
                             <p className='mission__dados__text'>Prazo &emsp;&emsp;  de &emsp;</p>
-                            <InputDate width='126px' type='date'/>
+                            <Input width='126' type='date' height='39'/>
                         </div>
 
                          
                         <div className='boxes'>
                             <p className='mission__dados__text'> Entrega</p>
-                            <InputDate width='126px' type='time'/>
+                            <Input width='126' type='time' height='39'/>
                                                      
                         </div>
                     </div>
                     
                     <div className="input__data">
                         <div className='boxes'>
-                            <p className='owneredit__text'>CPF</p>
-                            <InputSimple  
-                                placeholder='Nome da instituição'
-
-                            />
+                            <p className='mission__dados__text'>Nível da Missão</p>
+                            <DifficultButton/>
                         </div>
                         <div className='boxes'>
                             <p className='mission__dados__text'>Tipo de Entrega</p>
@@ -84,25 +82,42 @@ import Checkbox from '../components/CheckBox/Checkbox'
                                     onChange={handleOnlineChange}/>
                             </div>
                            
-
-                            
+    
                         </div>
+                       
+                    </div>
+
+
+                    <div className="input__data">
+                        <div className='boxes'>
+                            <p className='mission__dados__text'>Título da Missão</p>
+                            <InputSimple extra placeholder='Ex: Fazer atividade do livro'/>
+                        </div>
+                       
                        
                     </div>
                     
                     <div className="input__data">
                         <div className="boxes">
-                            
+                            <p className='mission__dados__text'> Descrição da Atividade</p>
+                            <textarea className='mission__text__area' rows={20} cols={50} />
+                            {/* <Input width='968.43' height='158.13'/> */}
                         </div>
                     </div>
+
+                    <div className="input__data">
+                        <div className="boxes">
+                            <p className='mission__dados__text'> Comentário Adicional</p>
+                            <Input width='716' height='39'/>
+                        </div>
+                    </div>
+
                 </div>
 
-
-
-            <p className='teacher__mission__title'>Missões</p>
-            <div className="teacher__mission__line"></div>
-            <InputSimple extra placeholder='Digite o nome da pesquisa' style={{ margin: 0, marginTop: '7px' }} />
-            <Button.Transparent style={{height: "53px"}}>Filtro</Button.Transparent>
+                <div className="mission__buttons">
+                    <Button.Transparent extra>Cancelar</Button.Transparent>   
+                    <Button.Green extra>Criar Missão</Button.Green>
+                </div>
 
         </div>
     </div>
