@@ -33,6 +33,8 @@ const SidebarTeacher = () => {
     }
 
     const handleLogoutClick = () => {
+        localStorage.removeItem('authToken'); // Remove o token de autenticação
+        localStorage.removeItem('userType'); // Remove o tipo de usuário
         router.push('/teacher-login');
     }
 

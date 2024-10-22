@@ -1,72 +1,67 @@
-.menu__teacher{
-    position: absolute;
-    width: 347px;
-    height: 100%;
+.menu__teacher {
+    position: fixed;
+    width: 80vw; /* 80% da largura da viewport */
+    max-width: 347px; /* Limita a largura máxima */
+    height: 100vh; /* Altura total da viewport */
     background-color: var(--jungle-green);
 }
 
-.menu__teacher__logocontainer{
+.menu__teacher__logocontainer {
     position: absolute;
-    margin-top: 11px;
+    margin-top: 1vh; /* Aproximadamente 11px convertidos */
     display: flex;
-    width: 347px;
+    width: 100%; /* Largura total */
     justify-content: center;
 }
 
-.menu__teacher__container{
+.menu__teacher__container {
     margin: auto;
-    margin-top: 136px;
-    width: 251px;
+    margin-top: 12.6vh; /* Aproximadamente 136px convertidos */
+    width: 70%; /* Largura relativa ao contêiner */
+    max-width: 251px; /* Limita a largura máxima */
 }
 
-.menu__teachercontainer__logout{
+.menu__teachercontainer__logout {
     margin: auto;
-    margin-top: 596px;
-    width: 251px;
+    margin-top: 55.2vh; /* Aproximadamente 596px convertidos */
+    width: 70%; /* Largura relativa */
+    max-width: 251px; /* Limita a largura máxima */
 }
 
-.menu__teacher__containerline{
+.menu__teacher__containerline {
     display: flex;
     align-items: center;
-    width: 251px;
-    height: 44px;
-    margin: 0;
-    margin-bottom: 23px;
+    width: 100%; /* Largura total */
+    height: 4.35vh; /* Aproximadamente 44px convertidos */
+    margin-bottom: 2.13vh; /* Aproximadamente 23px convertidos */
     border-radius: 8px;
     border: 1.5px solid white;
     cursor: pointer;
 }
 
-.menu__teacher__containerline:hover{
-    background-color: var(--zomp);
-}
-
 .menu__teacher__containericon {
     position: absolute;
+    width: 5vw; /* Largura relativa à viewport */
+    max-width: 54px; /* Limite de largura máxima */
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 54px;
-    margin: 0;
 }
 
-.menu__teacher__text{
+.menu__teacher__text {
     margin: 0;
+    font-size: 1.85vh; /* Aproximadamente 20px convertidos */
     font-family: var(--poppins);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     color: white;
     text-align: center;
-    width: 251px;
+    width: 100%; /* Largura total */
 }
 
-.icons__menuteacher{
-    width: 30px;
-    height: 30px;
-    margin: 0;
-    margin-left: 12px;
+.icons__menuteacher {
+    width: 2.78vh; /* Aproximadamente 30px convertidos para altura relativa */
+    height: 2.78vh; /* Altura relativa proporcional */
 }
 
 .menu__teacher__containerline.active {
-    background-color: var(--safity-orange); /* Adicione a cor desejada para a div ativa */
-  }
+    background-color: var(--safity-orange); /* Cor para o estado ativo */
+}
