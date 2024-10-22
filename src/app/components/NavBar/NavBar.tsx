@@ -45,7 +45,8 @@ const NavBar = ({isLogIn}: NavBarProps) => {
         } catch (error) {
           console.error('Erro ao buscar dados do usuário:', error);
           // Em caso de erro, redirecionar para a página de login ou mostrar uma mensagem de erro
-          router.push('/choosen-profile');
+          alert('Token não encontrado (Navbar)');
+          // router.push('/choosen-profile');
         }
       };
   
