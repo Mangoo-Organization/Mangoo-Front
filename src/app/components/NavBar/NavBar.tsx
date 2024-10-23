@@ -10,51 +10,15 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 
 const NavBar = ({isLogIn}: NavBarProps) => {
-    
-    const [userData, setUserData] = useState(null);
-    const router = useRouter();
 
+    const router = useRouter();
     function GoToLogIn(){
         router.push('/choosen-profile');
     }
 
-    useEffect(() => {
-      const fetchData = async () => {
-        const token = localStorage.getItem('authToken');
-  
-        if (!token) {
-          return;
-        }
-  
-        try {
-          const response = await fetch('http://45.174.64.137:8000/api/v1/my-data/', {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Token ${token}`,
-            },
-          });
-  
-          if (!response.ok) {
-            throw new Error(`Erro: ${response.statusText}`);
-          }
-  
-          const data = await response.json();
-          setUserData(data); // Armazena os dados no estado
-  
-        } catch (error) {
-          console.error('Erro ao buscar dados do usuário:', error);
-          // Em caso de erro, redirecionar para a página de login ou mostrar uma mensagem de erro
-          alert('Token não encontrado (Navbar)');
-          // router.push('/choosen-profile');
-        }
-      };
-  
-      fetchData();
-    }, [router]);
-
-    /*is login or not? -------------------------------------------------*/
+    /*is login or not?*/
     console.log(isLogIn)
+
     if(isLogIn){
         return(
             <header className='menu'>
@@ -67,7 +31,7 @@ const NavBar = ({isLogIn}: NavBarProps) => {
                 <div className="menu__right">
                     <Image src={Bell} alt="bell navbar" width={30} height={30} className='image__settings-right'/>
                     <div className='infos__container'>
-                    {userData ? ( <p className='infos__texttitle'>{userData.first_name}</p>) : (<p>Carregando dados...</p>)}
+                    <p className='infos__texttitle'>Nomeee</p>
                     <p className='infos_textsubtitle'>Tipo de usuário</p>
                     </div>
                     <Image src={UserImg} alt="User Icon" className='image__settings-right'/>

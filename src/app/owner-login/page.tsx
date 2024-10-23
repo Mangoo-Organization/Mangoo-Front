@@ -51,10 +51,14 @@ import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da ve
             router.push('/owneredit'); // Redirecionando para outra página após o login bem-sucedido
           } else {
             alert('Usuário não autorizado. Verifique seu tipo de conta.');
+            localStorage.removeItem('authToken'); // Remove o token de autenticação
+            localStorage.removeItem('userType'); // Remove o tipo de usuário
           }
           
         } catch (error) {
           alert('Erro ao fazer login.');
+          localStorage.removeItem('authToken'); // Remove o token de autenticação
+          localStorage.removeItem('userType'); // Remove o tipo de usuário
         }
       };
 

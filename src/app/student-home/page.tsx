@@ -12,6 +12,7 @@ const StudentHome = () => {
 
       if (!token) {
         // Caso o token não exista, redirecione para a página de login
+        alert('Faça login para acessar a página do estudante.');
         router.push('/student-login');
         return;
       }
@@ -35,6 +36,7 @@ const StudentHome = () => {
       } catch (error) {
         console.error('Erro ao buscar dados do estudante:', error);
         // Em caso de erro, redirecionar para a página de login ou mostrar uma mensagem de erro
+        alert('Dados não encontrados');
         router.push('/student-login');
       }
     };
