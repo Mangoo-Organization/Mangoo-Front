@@ -48,6 +48,7 @@ import { useRouter } from 'next/navigation' // ou 'next/router' dependendo da ve
           // Verificando o tipo de usuário
           if (userType === 'O') {
             localStorage.setItem('authToken', token); // Armazenando o token no localStorage, pode ser usado na home
+            localStorage.setItem('userType', userType); // Armazenando o userType no localStorage
             router.push('/owneredit'); // Redirecionando para outra página após o login bem-sucedido
           } else {
             alert('Usuário não autorizado. Verifique seu tipo de conta.');

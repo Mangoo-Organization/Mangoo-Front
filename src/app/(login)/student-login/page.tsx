@@ -41,6 +41,7 @@ const StudentLogin = () => {
       // Verificando o tipo de usuário
       if (userType === 'S') {
         localStorage.setItem('authToken', token); // Armazenando o token no localStorage, usado na home
+        localStorage.setItem('userType', userType); // Armazenando o userType no localStorage
         router.push('/student-home'); // Redirecionando para outra página após o login bem-sucedido
       } else {
         alert('Usuário não autorizado. Verifique seu tipo de conta.');

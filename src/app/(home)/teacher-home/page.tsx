@@ -18,16 +18,14 @@ const TeacherHome = () => {
 
       if (!token) {
         // Caso o token não exista, redirecione para a página de login
-        alert('Faça login para acessar a página.');
         console.error('token não encontrado.');
-        router.push('/teacher-login');
+        router.push('/without-permission');
         return;
       }
 
       if (userType !== 'T') {
         // Se o tipo de usuário não for 'T', mostre um alerta e redirecione
-        alert('Você não tem permissão para acessar essa página.');
-        router.push('/teacher-login');
+        router.push('/without-permission');
         return;
       }
 
