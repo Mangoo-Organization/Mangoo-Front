@@ -4,16 +4,25 @@ import { useRouter } from 'next/navigation';
 
 const StudentHome = () => {
   const [userData, setUserData] = useState(null);
+  const [loading, setLoading] = useState(true); // Estado de carregamento
   const router = useRouter();
 
   useEffect(() => {
     const fetchData = async () => {
       const token = localStorage.getItem('authToken');
+      const userType = localStorage.getItem('userType'); // Capturando o tipo de usuário
 
       if (!token) {
         // Caso o token não exista, redirecione para a página de login
-        alert('Faça login para acessar a página do estudante.');
-        router.push('/student-login');
+        router.push('/without-permission');
+        return;
+      }
+
+      if (userType !== 'S') {
+        // Se o tipo de usuário não for 'S', redirecione para a página sem permissão
+        console.error('Usuário não é do tipo S.');
+        console.log('Tipo de usuário:', userType);
+        router.push('/without-permission');
         return;
       }
 
@@ -35,14 +44,20 @@ const StudentHome = () => {
 
       } catch (error) {
         console.error('Erro ao buscar dados do estudante:', error);
-        // Em caso de erro, redirecionar para a página de login ou mostrar uma mensagem de erro
         alert('Dados não encontrados');
         router.push('/student-login');
+      } finally {
+        setLoading(false); // Define o carregamento como concluído
       }
     };
 
     fetchData();
   }, [router]);
+
+  // Enquanto estiver carregando, não renderize a página
+  if (loading) {
+    return <p>Carregando...</p>;
+  }
 
   return (
     <div>
