@@ -1,0 +1,188 @@
+.teacher__mission__container{
+    margin-top: 20px;
+    margin-left: 365px;
+    width: 1534px;
+    height: 895px;
+    border-radius: 24px;
+    background-color: rgb(255, 255, 255);
+    padding-left: 90px;
+    padding-top: 45px;
+}
+
+.teacher__mission__title{
+    font-family: var(--poppins);
+    color: var(--brunswick-green);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.teacher__mission__line{
+    width: 1089.074px;
+    height: 1.2px;
+    background-color: var(--safity-orange);
+    margin-bottom: 20px;
+}
+
+.teacher__mission__text{
+    color: var(--french-gray);
+    font-family: var(--nunito);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.type__missions__container{
+    display: flex;
+    flex-direction: line;
+    margin: 0;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    height: 185px;
+}
+
+.type__mission__title{
+    font-family: var(--poppins);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.type__misson__images:not(hover){
+    animation: imagesmissions-reverse 1.5s forwards;
+}
+
+/*mission custon----------------------------------*/
+
+.type__mission__custon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 183.306px;
+    height: 184.796px;
+    border-radius: 24px;
+    box-shadow: 5px 5px 5px 0px var(--caribbean-current);
+    background-color: var(--jungle-green);
+    margin-right: 30px;
+    cursor: pointer;
+    background-image: url('../../../../public/icones/mission_custon_mangoos.svg');
+    transition: 0.5s;
+}
+
+.type__mission__custon:hover{
+    transition: 0.5s;
+    background-color: var(--caribbean-current);
+    box-shadow: 5px 5px 5px 0px var(--brunswick-green);
+}
+
+.type__mission__custon .type__mission__title__container{
+    width: 120px;
+    height: 52px;
+}
+
+.type__mission__custon:hover .type__misson__images{
+    animation: imagesmissions 1.5s forwards;
+}
+
+/*mission class*/
+
+.type__mission__class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 183.306px;
+    height: 184.796px;
+    border-radius: 24px;
+    box-shadow: 5px 5px 5px 0px var(--brunswick-green);
+    background-color: var(--caribbean-current);
+    margin-right: 30px;
+    cursor: pointer;
+    background-image: url('../../../../public/icones/mission_class_mangoos.svg');
+    transition: 0.5s;
+}
+
+.type__mission__class:hover{
+    transition: 0.5s;
+    background-color: var(--brunswick-green);
+    box-shadow: 5px 5px 5px 0px var(--brunswick-green);
+}
+
+.type__mission__class .type__mission__title__container{
+    width: 100px;
+    height: 65px;
+}
+
+.type__mission__class:hover .type__misson__images{
+    animation: imagesmissions 1.5s forwards;
+}
+
+/*mission inhome*/
+
+.type__mission__inhome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 183.306px;
+    height: 184.796px;
+    border-radius: 24px;
+    box-shadow: 5px 5px 5px 0px var(--safity-orange);
+    background-color: var(--sandy-brown);
+    margin-right: 30px;
+    cursor: pointer;
+    background-image: url('../../../../public/icones/mission_inhome_mangoos.svg');
+    transition: 0.5s;
+}
+
+.type__mission__inhome:hover{
+    transition: 0.5s;
+    background-color: var(--safity-orange);
+    box-shadow: 5px 5px 5px 0px var(--safity-orange);
+}
+
+.type__mission__inhome .type__mission__title__container{
+    width: 100px;
+    height: 55px;
+}
+
+.type__mission__inhome:hover .type__misson__images{
+    animation: imagesmissions 1.5s forwards;
+}
+
+
+/*others-----------------------------------------------------*/
+
+.teacher__mission__searchbar{
+    padding-top: 7px;
+}
+
+.teachermission__tablecontainer{
+    margin-top: 20px;
+    width: 1191px;
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes imagesmissions {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(5px, 5px);
+    }
+  }
+
+  @keyframes imagesmissions-reverse { 
+    0% {
+      transform: translate(5px, 5px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
