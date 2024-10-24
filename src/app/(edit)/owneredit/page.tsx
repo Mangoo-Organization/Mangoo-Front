@@ -7,8 +7,14 @@ import SideBar from "../../components/Sidebar/SideBar";
 import * as Button from '../../components/Button/Button';
 import "./style.css";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+
 
 const OwnerEdit = () => {
+    // Estado de carregamento
+    const [loading, setLoading] = useState(true);
+    const router = useRouter(); 
+    // dados puxados da api
     const [data, setData] = useState<any[]>([]);
     const [email, setEmail] = useState('');
     const [itr, setItr] = useState('');
@@ -16,10 +22,29 @@ const OwnerEdit = () => {
     const [phone2, setPhone2] = useState('');
     const [first_name, setFirst_name] = useState('');
     const [second_name, setSecond_name] = useState('');
-    const token = '7aff3ca8d54af3c11ce9fd39884cd082db1232e1';
+    const token = localStorage.getItem('authToken');
+    
+   
     
     // Função para buscar os dados do usuário ao carregar a página
     useEffect(() => {
+        const userType = localStorage.getItem('userType');
+
+        if (!token) {
+            // Caso o token não exista, redirecione para a página de login
+            console.error('token não encontrado.');
+            router.push('/without-permission');
+            return;
+          }
+        if (userType !== 'O') {
+            router.push('/without-permission');
+            return;
+          }
+        
+          
+
+    
+
         const fetchUserData = async () => {
           try {
             const response = await fetch('http://45.174.64.137:8000/api/v1/user/1/', {
@@ -50,7 +75,13 @@ const OwnerEdit = () => {
         };
       
         fetchUserData();
-      }, []);
+        setLoading(false); // Define o carregamento como concluído
+      }, [router]);
+
+      if (loading) {
+        return <p>Carregando...</p>;
+      }
+    
 
     // Função para salvar as alterações
     const handleSave = async () => {
@@ -85,7 +116,7 @@ const OwnerEdit = () => {
 
     return (
         <>
-        <NavBar/>
+        <NavBar isLogIn/>
         <div className="owneredit__container">
             <div className="owneredit__sidebar">
                 <SideBar minhaConta='sidebar__textsub' instituicao='sidebar__text' token='sidebar__text'/>
